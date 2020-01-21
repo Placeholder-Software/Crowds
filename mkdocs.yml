@@ -12,9 +12,9 @@ nav:
     - "Requirements": "GettingStarted/Requirements.md"
     - "Quick Start": "GettingStarted/QuickStart.md"
     - "Support/Issues": "GettingStarted/Support.md"
-- "Demo Scenes":
-    - "1. Basic Steering Behaviours": "Demo Scenes/Steering.md"
-    - "2. Local Avoidance": "Demo Scenes/LocalAvoidance.md"
+    - "Demo Scenes":
+        - "1. Basic Steering Behaviours": "Demo Scenes/Steering.md"
+        - "2. Local Avoidance": "Demo Scenes/LocalAvoidance.md"
 - "How To":
     - "Follow A Path": "How To/FollowPath.md"
 - "Advanced":
