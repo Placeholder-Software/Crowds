@@ -1,0 +1,18 @@
+site_name: "Crowds: Unity Path Following"
+repo_url: "https://github.com/Placeholder-Software/Crowds"
+repo_name: "Issue Tracker"
+site_favicon: "crowds-favicon.png"
+google_analytics: ["UA-46722926-6", "crowds.readthedocs.io"]
+theme:
+  name: readthedocs
+  highlightjs: false
+  custom_dir: theme
+extra_css:
+  - css/pygment_tweaks.css
+use_directory_urls: false
+copyright: "<a href='https://placeholder-software.co.uk/'>Placeholder Software</a>"
+markdown_extensions:
+    - markdown.extensions.sane_lists
+    - codehilite
+pages:
+- Home: "index.md"
