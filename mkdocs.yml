@@ -1,18 +1,11 @@
-site_name: "Crowds: Unity Path Following"
+site_name: "Crowds"
 repo_url: "https://github.com/Placeholder-Software/Crowds"
 repo_name: "Issue Tracker"
 google_analytics: ["UA-46722926-6", "crowds.readthedocs.io"]
-theme:
-  name: mkdocs
-  highlightjs: false
-  custom_dir: theme
-extra_css:
-  - css/pygment_tweaks.css
-use_directory_urls: false
 copyright: "<a href='https://placeholder-software.co.uk/'>Placeholder Software</a>"
-markdown_extensions:
-    - markdown.extensions.sane_lists
-    - codehilite
+theme:
+    name: mkdocs
+    include_sidebar: false
 nav:
 - Home: "index.md"
 - "Getting Started":
@@ -24,7 +17,18 @@ nav:
     - "2. Local Avoidance": "Demo Scenes/LocalAvoidance.md"
 - "How To":
     - "Follow A Path": "How To/FollowPath.md"
+- "Advanced":
+    - "Custom Steering Behaviour": "Advanced/CustomSteering.md"
 - "Reference":
+    - "Entity Identity": "Reference/EntityIdentity.md"
     - "Navigator": "Reference/Navigator.md"
-
+    - "Stress": "Reference/Stress.md"
+    - "Urgency": "Reference/Urgency.md"
+    - "SteerForArrival": "Reference/SteerForArrival.md"
+    - "SteerForEvade": "Reference/SteerForEvade.md"
+    - "SteerForFlee": "Reference/SteerForFlee.md"
+    - "SteerForGoal": "Reference/SteerForGoal.md"
+    - "SteerForPursue": "Reference/SteerForPursue.md"
+    - "SteerForTargetSpeed": "Reference/SteerForTargetSpeed.md"
+    - "SteerForWander": "Reference/SteerForWander.md"
 
