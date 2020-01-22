@@ -9,25 +9,33 @@ theme:
 nav:
 - Home: "index.md"
 - "Getting Started":
-    - "Requirements": "GettingStarted/Requirements.md"
-    - "Quick Start": "GettingStarted/QuickStart.md"
+    - "Requirements": "GettingStarted/Requirements"
+    - "Quick Start": "GettingStarted/QuickStart"
     - "Demo Scenes":
-        - "1. Basic Steering Behaviours": "GettingStarted/Demo Scenes/Steering.md"
-        - "2. Local Avoidance": "GettingStarted/Demo Scenes/LocalAvoidance.md"
+        - "Contents": "GettingStarted/DemoScenes/Contents"
+        - "1. Basic Steering Behaviours": "GettingStarted/DemoScenes/Steering"
+        - "2. Local Avoidance": "GettingStarted/DemoScenes/LocalAvoidance"
     - "Getting Help": "GettingStarted/Support.md"
 - "How To":
-    - "Follow A Path": "How To/FollowPath.md"
+    - "Create A New Agent": "HowTo/CreateAnAgent.md"
+    - "Follow A Path": "HowTo/FollowPath.md"
 - "Advanced":
     - "Custom Steering Behaviour": "Advanced/CustomSteering.md"
 - "Reference":
-    - "Entity Identity": "Reference/EntityIdentity.md"
-    - "Navigator": "Reference/Navigator.md"
-    - "Stress": "Reference/Stress.md"
-    - "Urgency": "Reference/Urgency.md"
-    - "SteerForArrival": "Reference/SteerForArrival.md"
-    - "SteerForEvade": "Reference/SteerForEvade.md"
-    - "SteerForFlee": "Reference/SteerForFlee.md"
-    - "SteerForGoal": "Reference/SteerForGoal.md"
-    - "SteerForPursue": "Reference/SteerForPursue.md"
-    - "SteerForTargetSpeed": "Reference/SteerForTargetSpeed.md"
-    - "SteerForWander": "Reference/SteerForWander.md"
+    - "MonoBehaviours":
+        - "Entity Identity": "Reference/EntityIdentity.md"
+        - "Navigator": "Reference/Navigator.md"
+        - "Stress": "Reference/Stress.md"
+        - "Urgency": "Reference/Urgency.md"
+        - "SteerForArrival": "Reference/SteerForArrival.md"
+        - "SteerForEvade": "Reference/SteerForEvade.md"
+        - "SteerForFlee": "Reference/SteerForFlee.md"
+        - "SteerForGoal": "Reference/SteerForGoal.md"
+        - "SteerForPursue": "Reference/SteerForPursue.md"
+        - "SteerForTargetSpeed": "Reference/SteerForTargetSpeed.md"
+        - "SteerForWander": "Reference/SteerForWander.md"
+    - "ECS Components":
+        - "todo"
+    - "ECS Systems":
+        - "todo"
+
