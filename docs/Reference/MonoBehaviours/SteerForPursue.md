@@ -4,7 +4,7 @@ This MonoBehaviour causes an agent to steer towards the predicted future positio
 
 ## Inspector
 
-![EntityIdentity Inspector](images/SteerForPursueInspector.png)
+![EntityIdentity Inspector](../images/SteerForPursueInspector.png)
 
 #### Quarry
 

@@ -1,14 +1,10 @@
-# SteerForFlee
+# SteerForTargetSpeed
 
-This MonoBehaviour causes an agent to steer directly away from a target point.
+This MonoBehaviour causes an agent to move forwards at a given speed.
 
 ## Inspector
 
-![EntityIdentity Inspector](images/SteerForFleeInspector.png)
-
-#### Target
-
-The position which this Agent is fleeing from.
+![EntityIdentity Inspector](../images/SteerForTargetSpeedInspector.png)
 
 #### Weight
 
@@ -20,4 +16,4 @@ The units for the `Speed` property. `Direct` means that the `Speed` setting is a
 
 #### Speed
 
-The speed to move away from the target at. The units of this value depend on the `Speed Type` property.
+The speed to move towards the target at. The units of this value depend on the `Speed Type` property.

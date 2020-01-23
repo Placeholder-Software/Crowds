@@ -6,11 +6,19 @@ copyright: "<a href='https://placeholder-software.co.uk/'>Placeholder Software</
 theme:
     name: mkdocs
     include_sidebar: false
+markdown_extensions:
+    - admonition
+    - toc:
+        # The character on the right of `permalink` is a little chain icon. Doesn't render properly in vscode for some reason.
+        permalink: 
+extra_css:
+    - css/admonition.css
 nav:
 - Home: "index.md"
 - "Getting Started":
     - "Requirements": "GettingStarted/Requirements.md"
     - "Quick Start": "GettingStarted/QuickStart.md"
+    - "What Is Local Avoidance?": "GettingStarted/LocalAvoidance.md"
     - "Demo Scenes":
         - "Contents": "GettingStarted/DemoScenes/Contents.md"
         - "1. Basic Steering Behaviours": "GettingStarted/DemoScenes/Steering.md"
@@ -23,18 +31,18 @@ nav:
     - "Custom Steering Behaviour": "Advanced/CustomSteering.md"
 - "Reference":
     - "MonoBehaviours":
-        - "Entity Identity": "Reference/EntityIdentity.md"
-        - "Navigator": "Reference/Navigator.md"
+        - "Entity Identity": "Reference/MonoBehaviours/EntityIdentity.md"
+        - "Navigator": "Reference/MonoBehaviours/Navigator.md"
         - "Local Avoidance":
-            - "Urgency": "Reference/Urgency.md"
+            - "Urgency": "Reference/MonoBehaviours/Urgency.md"
         - "Steering":
-            - "SteerForArrival": "Reference/SteerForArrival.md"
-            - "SteerForFlee": "Reference/SteerForFlee.md"
-            - "SteerForEvade": "Reference/SteerForEvade.md"
-            - "SteerForPursue": "Reference/SteerForPursue.md"
-            - "SteerForGoal": "Reference/SteerForGoal.md"
-            - "SteerForTargetSpeed": "Reference/SteerForTargetSpeed.md"
-            - "SteerForWander": "Reference/SteerForWander.md"
+            - "SteerForArrival": "Reference/MonoBehaviours/SteerForArrival.md"
+            - "SteerForFlee": "Reference/MonoBehaviours/SteerForFlee.md"
+            - "SteerForEvade": "Reference/MonoBehaviours/SteerForEvade.md"
+            - "SteerForPursue": "Reference/MonoBehaviours/SteerForPursue.md"
+            - "SteerForGoal": "Reference/MonoBehaviours/SteerForGoal.md"
+            - "SteerForTargetSpeed": "Reference/MonoBehaviours/SteerForTargetSpeed.md"
+            - "SteerForWander": "Reference/MonoBehaviours/SteerForWander.md"
     - "ECS Components":
         - "todo"
     - "ECS Systems":

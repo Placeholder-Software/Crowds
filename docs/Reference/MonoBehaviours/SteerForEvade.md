@@ -4,7 +4,7 @@ This MonoBehaviour causes an agent to steer away from the predicted future posit
 
 ## Inspector
 
-![EntityIdentity Inspector](images/SteerForEvadeInspector.png)
+![EntityIdentity Inspector](../images/SteerForEvadeInspector.png)
 
 #### Menace
 
