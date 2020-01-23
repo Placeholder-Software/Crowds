@@ -9,12 +9,12 @@ theme:
 nav:
 - Home: "index.md"
 - "Getting Started":
-    - "Requirements": "GettingStarted/Requirements"
-    - "Quick Start": "GettingStarted/QuickStart"
+    - "Requirements": "GettingStarted/Requirements.md"
+    - "Quick Start": "GettingStarted/QuickStart.md"
     - "Demo Scenes":
-        - "Contents": "GettingStarted/DemoScenes/Contents"
-        - "1. Basic Steering Behaviours": "GettingStarted/DemoScenes/Steering"
-        - "2. Local Avoidance": "GettingStarted/DemoScenes/LocalAvoidance"
+        - "Contents": "GettingStarted/DemoScenes/Contents.md"
+        - "1. Basic Steering Behaviours": "GettingStarted/DemoScenes/Steering.md"
+        - "2. Local Avoidance": "GettingStarted/DemoScenes/LocalAvoidance.md"
     - "Getting Help": "GettingStarted/Support.md"
 - "How To":
     - "Create A New Agent": "HowTo/CreateAnAgent.md"
