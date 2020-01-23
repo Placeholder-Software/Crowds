@@ -1,7 +1,7 @@
 ## Getting Started (MonoBehaviours)
 
 1. After installing Crowds from the Unity asset store, check that you have the [requirements](../Requirements/) installed.
-2. Once you have Crowds properly installed, have a look at the demo scenes included in the package. They will walk you through the basics of the asset.
+2. Once you have Crowds properly installed, have a look at the demo scenes included in the package. They introduce the basics of what the asset does and what concepts you need to understand to make the most of it.
 3. Create a new gameObject in your scene, add the `Convert To Entity`, `Entity identity` and `Navigator` components.
 4. Start adding steering behaviours to control the movement of the agent around the scene.
 

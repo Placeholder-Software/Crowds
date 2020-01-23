@@ -25,15 +25,16 @@ nav:
     - "MonoBehaviours":
         - "Entity Identity": "Reference/EntityIdentity.md"
         - "Navigator": "Reference/Navigator.md"
-        - "Stress": "Reference/Stress.md"
-        - "Urgency": "Reference/Urgency.md"
-        - "SteerForArrival": "Reference/SteerForArrival.md"
-        - "SteerForEvade": "Reference/SteerForEvade.md"
-        - "SteerForFlee": "Reference/SteerForFlee.md"
-        - "SteerForGoal": "Reference/SteerForGoal.md"
-        - "SteerForPursue": "Reference/SteerForPursue.md"
-        - "SteerForTargetSpeed": "Reference/SteerForTargetSpeed.md"
-        - "SteerForWander": "Reference/SteerForWander.md"
+        - "Local Avoidance":
+            - "Urgency": "Reference/Urgency.md"
+        - "Steering":
+            - "SteerForArrival": "Reference/SteerForArrival.md"
+            - "SteerForFlee": "Reference/SteerForFlee.md"
+            - "SteerForEvade": "Reference/SteerForEvade.md"
+            - "SteerForPursue": "Reference/SteerForPursue.md"
+            - "SteerForGoal": "Reference/SteerForGoal.md"
+            - "SteerForTargetSpeed": "Reference/SteerForTargetSpeed.md"
+            - "SteerForWander": "Reference/SteerForWander.md"
     - "ECS Components":
         - "todo"
     - "ECS Systems":
