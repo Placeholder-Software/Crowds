@@ -21,6 +21,8 @@ The height of the agent in the simulation. The agent will avoid obstacles (e.g. 
 
 Agent type used for pathfinding. Available types are configured in the Unity navigation window: `Window > AI > Navigation > Agents`.
 
+### Pathfinding
+
 #### Enable Pathing
 
 Allow this entity to automatically find a path to it's goal (if it has a goal).
@@ -37,6 +39,8 @@ If the agent is not on it's calculated path for this many seconds the path will 
 
 todo
 
+### Steering
+
 #### Ideal Speed
 
 The speed which this agent prefers to move at.
@@ -45,9 +49,13 @@ The speed which this agent prefers to move at.
 
 The maximum speed which this agent can move at.
 
+### Local Avoidance (Blocking)
+
 #### Block Other Agents
 
 Whether or not this agent is an obstacle to other agents. If set to `false` other agents will not try to avoid this agent.
+
+### Local Avoidance (Avoiding)
 
 #### Avoid Local Obstacles
 
@@ -60,9 +68,6 @@ Priority determines how much an agent will yield to avoid a collision with anoth
 #### Turning Bias (Range)
 
 Turning bias which way an agent prefers to turn to avoid a collision. If many agents in a crowd share the same bias the movement of the crowd will flow much more smoothly.
-
-!!! note
-    This property sets a range of values. When the agent is first initialised it will choose a random value in this range. If you instantiate many prefabs of the same agent prefab this means they will all act slightly differently, which significantly improves the quality of simulation for large crowds.
 
 #### Advanced Configuration
 
@@ -96,18 +101,20 @@ todo
 
 todo
 
-#### Personal Space
+### Debug Gizmos
 
-todo
+#### Personal Space (Gizmos)
+
+If checked, the agent will show it's "personal space" (the circle it tries to avoid letting other agents in to).
 
 #### Steering Vector
 
-todo
+If checked, the agent will show it's steering vector (the vector it is trying to steer along).
 
 #### Nearby Agents
 
-todo
+If checked, the agent will show all the nearby agents it is trying to avoid.
 
-#### Nearby Obstacles
+#### Nearby Static Obstacles
 
-todo
+If checked, the agent will show all the nearby static obstacles (walls) it is trying to avoid.
