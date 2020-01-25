@@ -4,40 +4,38 @@ Urgency modifies how an agent acts within the Local Avoidance simulation to help
 
 As `Urgency` increases the `Priority` of the agent increases (meaning it will yield less to other agents) and the `Personal Space` of the agent decreases (meaning it will squeeze through smaller gaps). See [`Local Avoidance`](/GettingStarted/LocalAvoidance) for more details on these parameters.
 
-Once the `Urgency` exceeds the `Proxy Create Threshold` a "proxy agent" will be created just in front of the agent. The proxy agent is an obstacle which other agents must avoid but this agent ignores. This causes the crowd to part slightly in front of this agent, opening up a path for the agent.
-
 ## Inspector
 
 ![EntityIdentity Inspector](../images/UrgencyInspector.png)
 
 #### Proxy Create Threshold
 
-todo https://discordapp.com/channels/573292748430376974/573293314569404438/670336925198188595
+Once `Urgency` exceeds this level a "proxy obstacle" will be created just in front of this agent. Other agents will avoid the proxy but this agent will completely ignore it. This causes the crowd to part slightly in front of the agent, pushing open a path through a blockage.
 
 #### Growth Factor
 
-todo https://discordapp.com/channels/573292748430376974/573293314569404438/670336925198188595
+Once the `Urgency` is over the `Proxy Create Threshold` the proxy obstacle will grow to it's maximum size (the size of the agent) over a period of time. This parameter determines how quickly it grows. Increase it to push more aggressively through a crowd.
 
 ### Velocity Urgency
 
 #### Enable Velocity Urgency
 
-todo
+If this option is enabled Urgency will increase when the velocity the agent **wants** to move at (as determined by [`Steering Behaviours`](/GettingStarted/SteeringBehaviours)) is different to the velocity the agent is actually moving at (as determined by [`Local Avoidance`](/GettingStarted/LocalAvoidance)).
 
 #### Rate
 
-todo https://discordapp.com/channels/573292748430376974/573293314569404438/670339224586682409
+The rate at which the current agent Urgency will move towards the velocity urgency. A larger `Rate` means the urgency is more responsive, but may act more erratically.
 
 #### Factor
 
-todo https://discordapp.com/channels/573292748430376974/573293314569404438/670339224586682409
+How much a difference in velocity affects Urgency. A small factor means that a very large difference in velocity is required for a change in Urgency.
 
 ### Debug Gizmos
 
 #### Aggression Proxy
 
-todo
+If enabled the proxy created by Urgency will be shown as a circle in front of the agent.
 
 #### Aggression Proxy Gizmo Color
 
-todo
+Sets the colour for the`Aggression Proxy` gizmo.

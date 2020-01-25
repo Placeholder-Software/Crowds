@@ -19,6 +19,7 @@ nav:
 - "Getting Started":
     - "Requirements": "GettingStarted/Requirements.md"
     - "Quick Start": "GettingStarted/QuickStart.md"
+    - "What Are Steering Behaviours?": "GettingStarted/SteeringBehaviours.md"
     - "What Is Local Avoidance?": "GettingStarted/LocalAvoidance.md"
     - "Demo Scenes":
         - "Contents": "GettingStarted/DemoScenes/Contents.md"
