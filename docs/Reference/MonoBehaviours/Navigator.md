@@ -75,31 +75,41 @@ Toggle how this agent is configured. When enabled you can set the `Personal Spac
 
 #### Carefulness (Range)
 
+This property is only available if `Advanced Configuration` is disabled.
+
 An agent with a high carefulness will try harder to avoid collisions with other agents in the crowd. This can cause a more erratic movement.
 
 #### Extraversion (Range)
+
+This property is only available if `Advanced Configuration` is disabled.
 
 An agent with high extraversion will try harder to push through the crowd. This can cause more collisions.
 
 #### Personal Space Radius
 
-todo
+This property is only available if `Advanced Configuration` is enabled.
+
+The radius which local avoidance will attempt to keep clear of other agents. See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 
 #### Time Horizon (Obstacles)
 
-todo
+This property is only available if `Advanced Configuration` is enabled.
+
+How far ahead in time (seconds) the agent will attempt to avoid collisions with static obstacles (e.g. walls). See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 
 #### Time Horizon (Agents)
 
-todo
+This property is only available if `Advanced Configuration` is enabled.
+
+How far ahead in time (seconds) the agent will attempt to avoid collisions with other agents. See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 
 #### Max Neighbour Search Radius
 
-todo
+The size of the circle around this agent which will be searched for other agents to avoid. See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 
 #### Max Neighbour Count
 
-todo
+The maximum number of agents to avoid simultaneously. See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 
 ### Debug Gizmos
 

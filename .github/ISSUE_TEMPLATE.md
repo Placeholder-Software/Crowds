@@ -1,9 +1,10 @@
-Todo:
+Checklist:
  - [ ] Add `[Bug]`, `[feature]` or `[help]` to the title.
  - [ ] Check that there isn't an open issue already.
  - [ ] Describe the problem in detail, including what you tried, what you expected and what actually happened.
  - [ ] If you have discovered a workaround, give us the details.
  - [ ] Provide a detailed set of steps to reproduce the problem if you can.
+ - [ ] Filled out details of environment
 
 ## Your Environment
 - **Unity version**: e.g. 2017.4.32 _(check Help > About Unity)_
