@@ -15,7 +15,7 @@ extra_css:
     - css/admonition.css
     - css/title-indent.css
 nav:
-- Home: "index.md"
+- "Home": "index.md"
 - "Getting Started":
     - "Requirements": "GettingStarted/Requirements.md"
     - "Quick Start": "GettingStarted/QuickStart.md"
@@ -29,10 +29,19 @@ nav:
 - "How To":
     - "Create A New Agent": "HowTo/CreateAnAgent.md"
     - "Follow A Path": "HowTo/FollowPath.md"
+    - "Build Formations":
+        - "Roman Legion": "HowTo/Formations/Legion.md"
+        - "Bodyguard/VIP": "HowTo/Formations/Bodyguard.md"
+        - "Wolfpack": "HowTo/Formations/Wolfpack.md"
+    - "Traverse Off-Mesh Links": "HowTo/TraverseOffMesh.md"
+    - "Drive An Agent With Player Input": "HowTo/PlayerControl.md"
+    - "Animate An Agent": "HowTo/AnimatedAgents.md"
 - "Advanced":
     - "Custom Steering Behaviour": "Advanced/CustomSteering.md"
+    - "Pathfinding": "Advanced/Pathfinding.md"
+    - "Using The ECS": "Advanced/UseECS.md"
 - "Reference":
-    - "MonoBehaviours":
+#    - "MonoBehaviours":
         - "Entity Identity": "Reference/MonoBehaviours/EntityIdentity.md"
         - "Navigator": "Reference/MonoBehaviours/Navigator.md"
         - "Local Avoidance":
@@ -45,8 +54,9 @@ nav:
             - "SteerForGoal": "Reference/MonoBehaviours/SteerForGoal.md"
             - "SteerForTargetSpeed": "Reference/MonoBehaviours/SteerForTargetSpeed.md"
             - "SteerForWander": "Reference/MonoBehaviours/SteerForWander.md"
-    - "ECS Components":
-        - "todo"
-    - "ECS Systems":
-        - "todo"
+        - "BaseComponentProxyBehaviour": "Reference/MonoBehaviours/BaseComponentProxyBehaviour.md"
+#    - "ECS Components":
+#        - "todo"
+#    - "ECS Systems":
+#        - "todo"
 
