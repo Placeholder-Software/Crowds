@@ -29,6 +29,7 @@ nav:
 - "How To":
     - "Create A New Agent": "HowTo/CreateAnAgent.md"
     - "Follow A Path": "HowTo/FollowPath.md"
+    - "Find A Path": "HowTo/FindPath.md"
     - "Build Formations":
         - "Roman Legion": "HowTo/Formations/Legion.md"
         - "Bodyguard/VIP": "HowTo/Formations/Bodyguard.md"
@@ -39,13 +40,14 @@ nav:
 - "Advanced":
     - "Custom Steering Behaviour": "Advanced/CustomSteering.md"
     - "Pathfinding": "Advanced/Pathfinding.md"
-    - "Using The ECS": "Advanced/UseECS.md"
+#    - "Using The ECS": "Advanced/UseECS.md"
 - "Reference":
 #    - "MonoBehaviours":
         - "Entity Identity": "Reference/MonoBehaviours/EntityIdentity.md"
         - "Navigator": "Reference/MonoBehaviours/Navigator.md"
         - "Local Avoidance":
             - "Urgency": "Reference/MonoBehaviours/Urgency.md"
+        - "Goal": "Reference/MonoBehaviours/Goal.md"
         - "Steering":
             - "SteerForArrival": "Reference/MonoBehaviours/SteerForArrival.md"
             - "SteerForFlee": "Reference/MonoBehaviours/SteerForFlee.md"
@@ -56,7 +58,7 @@ nav:
             - "SteerForWander": "Reference/MonoBehaviours/SteerForWander.md"
         - "BaseComponentProxyBehaviour": "Reference/MonoBehaviours/BaseComponentProxyBehaviour.md"
 #    - "ECS Components":
-#        - "todo"
+#        - "stuff"
 #    - "ECS Systems":
-#        - "todo"
+#        - "stuff"
 

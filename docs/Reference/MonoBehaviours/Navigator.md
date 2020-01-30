@@ -37,7 +37,7 @@ If the agent is not on it's calculated path for this many seconds the path will 
 
 #### Path Lookahead Distance
 
-todo
+How far ahead of the agent should path points be calculated.
 
 ### Steering
 
@@ -128,3 +128,17 @@ If checked, the agent will show all the nearby agents it is trying to avoid.
 #### Nearby Static Obstacles
 
 If checked, the agent will show all the nearby static obstacles (walls) it is trying to avoid.
+
+## Script Properties
+
+#### GoalPosition
+
+Set the goal position for this agent. If pathfinding is enabled a path will be found to this position.
+
+#### GoalRadius
+
+Set the radius of the goal position. The agent will aim to arrive somewhere within the goal radius.
+
+#### GoalVelocity
+
+Set the velocity of the goal position. The agent will aim to match this velocity when it is within the radius.
