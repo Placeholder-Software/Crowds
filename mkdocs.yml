@@ -29,7 +29,6 @@ nav:
 - "How To":
     - "Create A New Agent": "HowTo/CreateAnAgent.md"
     - "Follow A Path": "HowTo/FollowPath.md"
-    - "Find A Path": "HowTo/FindPath.md"
     - "Build Formations":
         - "Roman Legion": "HowTo/Formations/Legion.md"
         - "Bodyguard/VIP": "HowTo/Formations/Bodyguard.md"
@@ -37,6 +36,7 @@ nav:
     - "Traverse Off-Mesh Links": "HowTo/TraverseOffMesh.md"
     - "Drive An Agent With Player Input": "HowTo/PlayerControl.md"
     - "Animate An Agent": "HowTo/AnimatedAgents.md"
+    - "Find A Path": "HowTo/FindPath.md"
 - "Advanced":
     - "Custom Steering Behaviour": "Advanced/CustomSteering.md"
     - "Pathfinding": "Advanced/Pathfinding.md"
@@ -57,6 +57,11 @@ nav:
             - "SteerForTargetSpeed": "Reference/MonoBehaviours/SteerForTargetSpeed.md"
             - "SteerForWander": "Reference/MonoBehaviours/SteerForWander.md"
         - "BaseComponentProxyBehaviour": "Reference/MonoBehaviours/BaseComponentProxyBehaviour.md"
+        - "Pathfinding":
+            - "PathfindingTask": "Reference/Other/PathfindingTask.md"
+            - "PathfindingResult": "Reference/Other/PathfindingResult.md"
+            - "PathfindingResultPolygon": "Reference/Other/PathfindingResultPolygon.md"
+            - "PathfindingResultPortal": "Reference/Other/PathfindingResultPortal.md"
 #    - "ECS Components":
 #        - "stuff"
 #    - "ECS Systems":

@@ -142,3 +142,25 @@ Set the radius of the goal position. The agent will aim to arrive somewhere with
 #### GoalVelocity
 
 Set the velocity of the goal position. The agent will aim to match this velocity when it is within the radius.
+
+## Script Methods
+
+### bool Raycast(Vector3 targetPosition, out [NavMeshHit](https://docs.unity3d.com/ScriptReference/AI.NavMeshHit.html) hit)
+
+This method is equivalent to the Unity [`NavMesh.Raycast`](https://docs.unity3d.com/ScriptReference/AI.NavMesh.Raycast.html) method. It traces a line between two points on the NavMesh, starting at the agent position and ending at the `targetPosition`. Returns `true` if the ray terminates before reaching the `targetPosition`, in this case the `hit` field contains data about where the ray ended.
+
+### bool FindClosestEdge(out [NavMeshHit](https://docs.unity3d.com/ScriptReference/AI.NavMeshHit.html) hit)
+
+This method is equivalent to the Unity [`NavMesh.FindClosestEdge`](https://docs.unity3d.com/ScriptReference/AI.NavMesh.FindClosestEdge.html) method. It finds the closest navmesh edge using the agent position and `AreaMask`. Returns `true` is an edge is found.
+
+### [PathfindingTask](/Reference/Other/PathfindingTask) FindPath(Vector3 end)
+
+Begins finding a path from the agent position to the `end` position, using the agent `AreaMask`, `AgentType` and `PathingAreaCost`. 
+
+The pathfinding runs asycnchronously and may take several frames to complete.
+
+### [PathfindingTask](/Reference/Other/PathfindingTask) FindPath(Vector3 start, Vector3 end, int areaMask, int agentType, NativeSlice<float>? areaCosts = default)
+
+Begins finding a path from the `start` point to the `end` point using a custom `areaMask`, `agentType` and `areaCosts`. `areaCosts` may be null in which case the default costs are used.
+
+The pathfinding runs asycnchronously and may take several frames to complete.
