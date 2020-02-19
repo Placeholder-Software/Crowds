@@ -9,4 +9,4 @@ If you are unsure how to achieve the type of movement you want have a look at th
 
 ### Crowds And Unity DOTS
 
-Crowds _internally_ uses the Unity "Data Oriented Tech Stack" (ECS, Jobs, Burst compiler) to simulate all the agents efficiently. However, to use Crowds **you do not need to understand DOTS**, all the complexity of it is contained within Crowds and is presented as a set of easy to use MonoBehaviours. If you are not using the ECS to build your game you can simply ignore any parts of this documentation which mention the ECS.
+Crowds _internally_ uses the Unity "Data Oriented Tech Stack" (ECS, Jobs, Burst compiler) to simulate all the agents efficiently. However, to use Crowds **you do not need to understand DOTS**! All the complexity of it is contained within Crowds and is presented as a set of easy to use MonoBehaviours. If you are not using the ECS to build your game you can simply ignore any parts of this documentation which mention the ECS.
