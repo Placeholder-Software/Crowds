@@ -6,7 +6,7 @@ This structure represents the result of a pathfinding job which has completed.
 
 ### Status
 
-The full status of the pathfind. See Unity [https://docs.unity3d.com/ScriptReference/Experimental.AI.PathQueryStatus.html](https://docs.unity3d.com/ScriptReference/Experimental.AI.PathQueryStatus.html).
+The full status of the pathfind. See Unity [PathQueryStatus](https://docs.unity3d.com/ScriptReference/Experimental.AI.PathQueryStatus.html).
 
 ### Start
 
