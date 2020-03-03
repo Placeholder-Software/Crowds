@@ -4,7 +4,7 @@ This MonoBehaviour makes it easy to configure the goal position for an agent wit
 
 ## Inspector
 
-![EntityIdentity Inspector](../images/SteerForWanderInspector.png)
+![EntityIdentity Inspector](../images/SteerForGoalInspector.png)
 
 todo: take that screenshot ^
 
