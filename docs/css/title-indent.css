@@ -14,3 +14,11 @@ h4 {
 h4 ~ p {
     padding-left: 30px;
 }
+
+h5 {
+    padding-left: 30px;
+}
+
+h5 ~ p {
+    padding-left: 40px;
+}
