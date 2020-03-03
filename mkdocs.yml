@@ -58,6 +58,9 @@ nav:
             - "SteerForTargetSpeed": "Reference/MonoBehaviours/SteerForTargetSpeed.md"
             - "SteerForTargetVelocity": "Reference/MonoBehaviours/SteerForTargetVelocity.md"
             - "SteerForWander": "Reference/MonoBehaviours/SteerForWander.md"
+        - "Formations":
+            - "Assign To Formation": "Reference/MonoBehaviours/AssignToFormation.md"
+            - "Rectangle Grid": "Reference/MonoBehaviours/RectangleGridFormation.md"
         - "BaseComponentProxyBehaviour": "Reference/MonoBehaviours/BaseComponentProxyBehaviour.md"
         - "Pathfinding":
             - "PathfindingTask": "Reference/Other/PathfindingTask.md"
