@@ -62,9 +62,15 @@ nav:
             - "SteerForTargetSpeed": "Reference/MonoBehaviours/Steering/SteerForTargetSpeed.md"
             - "SteerForTargetVelocity": "Reference/MonoBehaviours/Steering/SteerForTargetVelocity.md"
             - "SteerForWander": "Reference/MonoBehaviours/Steering/SteerForWander.md"
-        - "Formations":
-            - "Assign To Formation": "Reference/MonoBehaviours/AssignToFormation.md"
-            - "Rectangle Grid": "Reference/MonoBehaviours/RectangleGridFormation.md"
+        - "Sensing":
+            - "AgentProximitySensor": "Reference/MonoBehaviours/Sensing/AgentProximitySensor.md"
+            - "CircleSensor": "Reference/MonoBehaviours/Sensing/CircleSensor.md"
+            - "GameObjectSensor": "Reference/MonoBehaviours/Sensing/GameObjectSensor.md"
+            - "LineSensor": "Reference/MonoBehaviours/Sensing/LineSensor.md"
+            - "PointSensor": "Reference/MonoBehaviours/Sensing/PointSensor.md"
+#        - "Formations":
+#            - "Assign To Formation": "Reference/MonoBehaviours/AssignToFormation.md"
+#            - "Rectangle Grid": "Reference/MonoBehaviours/RectangleGridFormation.md"
         - "BaseComponentProxyBehaviour": "Reference/MonoBehaviours/BaseComponentProxyBehaviour.md"
         - "Pathfinding":
             - "PathfindingTask": "Reference/Other/PathfindingTask.md"

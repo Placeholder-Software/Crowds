@@ -4,7 +4,7 @@ This MonoBehaviour causes an agent to move forwards at a given speed.
 
 ## Inspector
 
-![EntityIdentity Inspector](../images/SteerForTargetSpeedInspector.png)
+![EntityIdentity Inspector](../../../../images/SteerForTargetSpeedInspector.png)
 
 #### Weight
 

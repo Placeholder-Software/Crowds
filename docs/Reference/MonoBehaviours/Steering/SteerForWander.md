@@ -4,7 +4,7 @@ This MonoBehaviour causes an agent to steer randomly. It is not pure random nois
 
 ## Inspector
 
-![EntityIdentity Inspector](../images/SteerForWanderInspector.png)
+![SteerForWander Inspector](../../../../images/SteerForWanderInspector.png)
 
 todo: take that screenshot ^
 

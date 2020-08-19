@@ -4,7 +4,7 @@ This MonoBehaviour causes an agent to steer directly towards a target point and 
 
 ## Inspector
 
-![EntityIdentity Inspector](../images/SteerForArrivalInspector.png)
+![EntityIdentity Inspector](../../../../images/SteerForArrivalInspector.png)
 
 #### Target
 
