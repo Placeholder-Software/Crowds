@@ -1,6 +1,6 @@
 ## Player Control
 
-Agents can be controlled by player input by using the [SteerForTargetVelocity](/Reference/MonoBehaviours/SteerForTargetVelocity) behaviour and a custom script which reads player [Input](https://docs.unity3d.com/ScriptReference/Input.html) and sets the `SteeringVector` property. There is a basic example script included in the package at `Assets/Plugins/PlaceholderSoftware/Crowds/Demos/Content/Scripts/SteerUserInput.cs`.
+Agents can be controlled by player input by using the [SteerForTargetVelocity](/Reference/MonoBehaviours/Steering/SteerForTargetVelocity) behaviour and a custom script which reads player [Input](https://docs.unity3d.com/ScriptReference/Input.html) and sets the `SteeringVector` property. There is a basic example script included in the package at `Assets/Plugins/PlaceholderSoftware/Crowds/Demos/Content/Scripts/SteerUserInput.cs`.
 
 The [Navigator](/Reference/MonoBehaviours/Navigator) behaviour of a player driven agent should be configured to to move through the crowd very aggressively so that other agents tend to move out of it's way, this keeps the movement of the agent closely tied to the input from the player. This can be achieved in two ways.
 
