@@ -26,7 +26,7 @@ nav:
         - "Contents": "GettingStarted/DemoScenes/Contents.md"
         - "1. Basic Steering Behaviours": "GettingStarted/DemoScenes/Steering.md"
         - "2. Local Avoidance": "GettingStarted/DemoScenes/LocalAvoidance.md"
-# todo: more demo scene        
+#       todo: more demo scenes
     - "Getting Help": "GettingStarted/Support.md"
 - "How To":
     - "Create A New Agent": "HowTo/CreateAnAgent.md"
