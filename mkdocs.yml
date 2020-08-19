@@ -21,22 +21,26 @@ nav:
     - "Quick Start": "GettingStarted/QuickStart.md"
     - "What Are Steering Behaviours?": "GettingStarted/SteeringBehaviours.md"
     - "What Is Local Avoidance?": "GettingStarted/LocalAvoidance.md"
+#    - "Formations": "GettingStarted/Formations.md"
     - "Demo Scenes":
         - "Contents": "GettingStarted/DemoScenes/Contents.md"
         - "1. Basic Steering Behaviours": "GettingStarted/DemoScenes/Steering.md"
         - "2. Local Avoidance": "GettingStarted/DemoScenes/LocalAvoidance.md"
+# todo: more demo scene        
     - "Getting Help": "GettingStarted/Support.md"
 - "How To":
     - "Create A New Agent": "HowTo/CreateAnAgent.md"
+    - "Replace A NavMeshAgent": "HowTo/ReplaceNavMeshAgent.md"
     - "Follow A Path": "HowTo/FollowPath.md"
-    - "Build Formations":
-        - "Roman Legion": "HowTo/Formations/Legion.md"
-        - "Bodyguard/VIP": "HowTo/Formations/Bodyguard.md"
-        - "Wolfpack": "HowTo/Formations/Wolfpack.md"
+    - "Find A Path": "HowTo/FindPath.md"
     - "Traverse Off-Mesh Links": "HowTo/TraverseOffMesh.md"
+#    - "Build Formations":
+#        - "Roman Legion": "HowTo/Formations/Legion.md"
+#        - "Bodyguard/VIP": "HowTo/Formations/Bodyguard.md"
+#        - "Wolfpack": "HowTo/Formations/Wolfpack.md"
     - "Drive An Agent With Player Input": "HowTo/PlayerControl.md"
     - "Animate An Agent": "HowTo/AnimatedAgents.md"
-    - "Find A Path": "HowTo/FindPath.md"
+    
 - "Advanced":
     - "Custom Steering Behaviour": "Advanced/CustomSteering.md"
     - "Pathfinding": "Advanced/Pathfinding.md"
@@ -67,6 +71,8 @@ nav:
             - "PathfindingResult": "Reference/Other/PathfindingResult.md"
             - "PathfindingResultPolygon": "Reference/Other/PathfindingResultPolygon.md"
             - "PathfindingResultPortal": "Reference/Other/PathfindingResultPortal.md"
+        - "NavMeshAgent Replacement":
+            - "EnhancedNavMeshAgent": "Reference/Monobehaviours/EnhancedNavMeshAgent.md"
 #    - "ECS Components":
 #        - "stuff"
 #    - "ECS Systems":

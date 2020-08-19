@@ -9,7 +9,7 @@ The `Navigator` behaviour has two methods ([1](/Reference/MonoBehaviours/Navigat
 
 To find a path from an agent to a position, first call `FindPath`
 
-    Navigator agent;
+    Navigator agent = GetComponent<Navigator>();
     Vector3 destination;
     var task = agent.FindPath(destination);
 
@@ -19,7 +19,7 @@ This returns a [`PathfindingTask`](/Reference/Other/PathfindingTask/) which repr
 
 There is another `FindPath` method which allows configuration of many more parameters, including the start and end position:
 
-    Navigator agent;
+    Navigator agent = GetComponent<Navigator>();
     Vector3 start;
     Vector3 end;
     int areaMask;
@@ -39,18 +39,22 @@ Each frame check if the job is finished by trying to get a [`PathfindingResult`]
     var result = task.TryGetResult();
     if (result.HasValue)
     {
-        // Pathfinding Is Finished
+        // Pathfinding is finished
+    }
+    else
+    {
+        // Pathfinding is still running
     }
 
 The result may represent a pathfind which completed with a failure, for example if there is no path to the destination. This can be checked with the `IsFailure` property:
 
     if (result.IsFailure)
     {
-        // Pathfind Failed
+        // Pathfind failure
     }
     else
     {
-        // Pathfind Success
+        // Pathfind success
     }
 
 The result can be used to retrieve the polygons in the path:

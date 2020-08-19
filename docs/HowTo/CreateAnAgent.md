@@ -9,3 +9,6 @@
 
 4. Add a `Navigator` behaviour and configure it as necessary for your agent. See the [reference documentation](../Reference/MonoBehaviours/Navigator.md) for this component.
 5. Add [Steering Behaviours](../GettingStarted/SteeringBehaviours.md) to make your gameObject move.
+
+
+todo: mention synchroniser configuration

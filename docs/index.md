@@ -4,6 +4,12 @@ Crowds **turbocharges** the NPCs in your game! Easily control **large groups** o
 
 Crowds is built with the Unity Entity Component System (ECS) and the Job system which makes it **fast** and **scalable**. If your game isn't using these things that's not a problem - it's all accessed through **easy to use** behaviours and a comprehensive scripting API. You can get the **great performance** of ECS for your game without having to learn the complexity of how it works!
 
+todo: rewrite intro:
+ - Pathfinding
+ - Very large groups (great performance)
+ - Local avoidance (natural movement)
+ - Natural formations
+
 ---
 
  - **[Try Demos](todo)**

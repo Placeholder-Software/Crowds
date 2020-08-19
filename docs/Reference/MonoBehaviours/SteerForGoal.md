@@ -8,8 +8,6 @@ The goal point can be set to have a velocity as well as a position, in this case
 
 ![EntityIdentity Inspector](../images/SteerForGoalInspector.png)
 
-todo: retake screenshot with PR 92 and buffers
-
 #### Weight
 
 The Weight of this steering behaviour in the weighted average with all other steering behaviours.
@@ -30,5 +28,4 @@ The units for the `Speed` property. `Direct` means that the `Speed` setting is a
 
 The speed to move away from the target at. The units of this value depend on the `Speed Type` property.
 
-todo: refactor for buffer steering
-todo: add script methods (PR #92)
+todo: add script methods (after PR #92)
