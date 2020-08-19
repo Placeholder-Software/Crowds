@@ -15,11 +15,11 @@ An agent will usually have several of these behaviours which are blended togethe
 
 Basic steering behaviours as described above have been used in many games over the years. However they have a serious problem; if two steering behaviours point in opposite directions blending them together will result in the agent standing still! This basic approach can result in an agent appearing "indecisive" as it hovers around the midpoint or very slowly moves to one side.
 
-![Indecisive Agent](../../images/SteeringBehavioursNoMovement.png)
+![Indecisive Agent](/images/SteeringBehavioursNoMovement.png)
 
 Crowds solves this problem with a "steering context". Each steering behaviours outputs how much it wants to move in a set of fixed directions and then the final direction is picked from this set. The final decision is made by selecting the direction which most steering behaviours want to move in. This means that you can add any numbers of steering behaviours to influence the behaviour of an agent in many ways. For the above example the context would look like this:
 
-![Steering Context Graph](../../images/SteeringContextGraph.png)
+![Steering Context Graph](/images/SteeringContextGraph.png)
 
 There are two peaks (move left, and move right). In this example the two peaks are identical and so an arbitrary one is chosen.
 
@@ -27,11 +27,11 @@ There are two peaks (move left, and move right). In this example the two peaks a
 
 Steering behaviours indicate a direction that an agent _should_ to move in. Danger sensors do the opposite: they sense directions which the agent _should not_ move in. Danger sensors work in a similar way to steering behaviours, each sensor adds some weight to directions it considers risky, the final danger map is used to modify the steering context before picking a direction.
 
-![A Danger](../../images/SteeringWithDanger.png)
+![A Danger](/images/SteeringWithDanger.png)
 
 In this example there is a dangerous lion to the right. A sensor that detects lions adds some danger to the steering context in that direction which reduces the desire of the agent to move to the in that direction. Now the tie is broken and the agent will always move to the left because it is less dangerous.
 
-![Steering Context Graph With Danger](../../images/SteeringContextGraphWithDanger.png)
+![Steering Context Graph With Danger](/images/SteeringContextGraphWithDanger.png)
 
 Crowds includes a library of easy to use sensors which can be adapted to a number of different scenarios:
 
