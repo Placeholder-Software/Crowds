@@ -21,5 +21,4 @@ If you have a compatibility problem with a supported version of the Editor pleas
 
 
 
-todo:
- - Retake all images with 2019.4 dark theme
+todo: Retake all images with 2019.4 dark theme

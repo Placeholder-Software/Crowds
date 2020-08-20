@@ -8,4 +8,4 @@
 4. Add a [`Synchroniser`](../Reference/MonoBehaviours/Synchroniser.md) behaviour and configure it like this:
 ![Synchroniser Inspector](../images/SynchroniserInspector.png)
 
-5. Add [Steering Behaviours](../GettingStarted/SteeringBehaviours.md) to make your agent move.
+5. Add [Steering Behaviours](../GettingStarted/SteeringBehaviours.md) to make the agent move.
