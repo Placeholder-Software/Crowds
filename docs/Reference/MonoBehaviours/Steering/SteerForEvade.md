@@ -16,7 +16,7 @@ If the `Menace` transform is another Agent it's position will be predicted this 
 
 #### Weight
 
-The Weight of this steering behaviour in the weighted average with all other steering behaviours.
+The importance of this action relative to other steering actions.
 
 #### Speed Type
 
@@ -28,4 +28,18 @@ The speed to move away from the target at. The units of this value depend on the
 
 ### Add New/Delete
 
-todo
+Create a new instance of this steering behaviour or delete an existing instance.
+
+## Scripting
+
+#### `Create(string instanceName)`
+
+Create a new steering action with the given name. If the name is `null` a random name will be chosen.
+
+#### `TryGet(string instanceName)`
+
+Try to get an existing steering action with the given name. Returns `null` if there is no action with that name.
+
+#### `bool TryDelete(string instanceName)`
+
+Try to delete the steering action with the given name. Returns `true` if an action with that name existed and was deleted.

@@ -3,7 +3,7 @@
 !!! note
     To make an agent walk along a path, follow this [guide](../FollowPath) instead.
 
-The `Navigator` behaviour has two methods ([1](/Reference/MonoBehaviours/Navigator/#pathfindingtask-findpathvector3-end), [2](/Reference/MonoBehaviours/Navigator/#pathfindingtask-findpathvector3-start-vector3-end-int-areamask-int-agenttype-nativeslice-areacosts-default)) to find a path from an agent to a destination.
+The `Navigator` MonoBehaviour has two methods ([1](/Reference/MonoBehaviours/Navigator/#pathfindingtask-findpathvector3-end), [2](/Reference/MonoBehaviours/Navigator/#pathfindingtask-findpathvector3-start-vector3-end-int-areamask-int-agenttype-nativeslice-areacosts-default)) to find a path from an agent to a destination.
 
 ### Basic FindPath
 

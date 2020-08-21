@@ -10,7 +10,7 @@ The goal point can be set to have a velocity as well as a position, in this case
 
 #### Weight
 
-The Weight of this steering behaviour in the weighted average with all other steering behaviours.
+The importance of this action relative to other steering actions.
 
 #### Slowing Distance
 

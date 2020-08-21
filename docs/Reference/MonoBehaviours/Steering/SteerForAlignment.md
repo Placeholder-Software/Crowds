@@ -8,11 +8,11 @@ This MonoBehaviour causes an agent to steer in the average direction of all near
 
 #### Name
 
-The target position (in 2D space) that the agent is walking towards. For example if you have a `transform` to walk towards you would set this to the `XZ` position of the `transform`.
+The unique ID of this steering action. Used to identify this instance in scripts.
 
 #### Weight
 
-The importance of this behaviour relative to other steering behaviours.
+The importance of this action relative to other steering actions.
 
 #### Max Distance
 
@@ -24,4 +24,18 @@ Only agents in front of the agent (within this angle) will contribute to the ave
 
 ### Add New/Delete
 
-todo
+Create a new instance of this steering behaviour or delete an existing instance.
+
+## Scripting
+
+#### `Create(string instanceName)`
+
+Create a new steering action with the given name. If the name is `null` a random name will be chosen.
+
+#### `TryGet(string instanceName)`
+
+Try to get an existing steering action with the given name. Returns `null` if there is no action with that name.
+
+#### `bool TryDelete(string instanceName)`
+
+Try to delete the steering action with the given name. Returns `true` if an action with that name existed and was deleted.
