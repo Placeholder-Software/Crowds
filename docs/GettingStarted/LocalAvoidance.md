@@ -1,3 +1,3 @@
 ## Local Avoidance
 
-todo
+todo: what is local avoidance?

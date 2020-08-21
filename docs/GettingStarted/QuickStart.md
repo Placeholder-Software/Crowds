@@ -10,16 +10,12 @@ If you are unsure how to achieve the type of movement you want have a look at th
 
 ## Basic Concepts
 
-The **Getting Started** section 
-
-todo explain and link getting started stuff
+The **Getting Started** section of the docs explains the basic concepts of how Crowds works, what [Local Avoidance](../LocalAvoidance.md) is, how [Context Aware Steering Behaviours](../SteeringBehaviours.md) solve the pitfalls of traditional steering behaviours and how [Steering Sensors](../SteeringSensors.md) drive can inject gameplay into movement to create more intelligent behaviour.
 
 ## Demo Scenes
 
-Crowds includes a number of demo scenes which introduce the basic concepts of the asset and demostrate how to create some common scenarios. Get started with these demos by running the `Start Here` scene in the `Assets/Plugins/PlaceholderSoftware/Crowds/Demos` folder.
+Crowds includes a number of demo scenes which introduce the basic concepts of the system and demostrate how to create some common scenarios. Get started with these demos by running the `Start Here` scene in the `Assets/Plugins/PlaceholderSoftware/Crowds/Demos` folder. If you're having trouble making an agent behave as you want in your scene try cloning the most similar demo scene and tweaking that.
 
-todo: link all demos
+## How To
 
-### Crowds And Unity DOTS
-
-Crowds _internally_ uses the Unity "Data Oriented Tech Stack" (ECS, Jobs, Burst compiler) to simulate all the agents efficiently. However, to use Crowds **you do not need to understand DOTS**! All the complexity of it is contained within Crowds and is presented as a set of easy to use MonoBehaviours. If you are not using the ECS to build your game you can simply ignore any parts of this documentation which mention the ECS.
+The **How To** section of the docs has a number of minimal tutorials for common scenarios. If you're not sure how to achieve something with Crowds try searching through these guides to see if one explains how to do what you want.
