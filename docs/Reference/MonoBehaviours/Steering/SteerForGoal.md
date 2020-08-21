@@ -30,7 +30,7 @@ The speed to move away from the target at. The units of this value depend on the
 
 #### Autocomplete Off Mesh Links
 
-todo
+Set if this agent should automatically complete off-mesh links by teleporting to the end of the link as soon as `IsWaitingAtOffMeshLink` becomes `true`.
 
 ## Scripting
 
@@ -40,11 +40,11 @@ Indicates if the Agent is on "final approach" to an off-mesh link. This means th
 
 #### `PolygonId? OffMeshLinkPolygon`
 
-Gets the `PolygonId` of the off-mesh link which the agent is approaching. Returns `null` is `IsApproachingOffMeshLink` is `false`.
+Gets the [`PolygonId`](https://docs.unity3d.com/ScriptReference/Experimental.AI.PolygonId.html) of the off-mesh link which the agent is approaching. Returns `null` is `IsApproachingOffMeshLink` is `false`.
 
 #### `bool IsWaitingAtOffMeshLink`
 
-Indicates if the agent is standing still at the start of an off-mesh link, waiting to complete the link.
+Indicates if the agent is standing still at the start of an off-mesh link, waiting to complete the link. When the agent is in this state you may move it in the scene (e.g. play an animation to cross the link).
 
 #### `float? DistanceToOffMeshLink`
 
