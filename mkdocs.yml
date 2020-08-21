@@ -78,7 +78,7 @@ nav:
             - "PathfindingResultPolygon": "Reference/Other/PathfindingResultPolygon.md"
             - "PathfindingResultPortal": "Reference/Other/PathfindingResultPortal.md"
         - "NavMeshAgent Replacement":
-            - "EnhancedNavMeshAgent": "Reference/Monobehaviours/EnhancedNavMeshAgent.md"
+            - "EnhancedNavMeshAgent": "Reference/MonoBehaviours/EnhancedNavMeshAgent.md"
 #    - "ECS Components":
 #        - "stuff"
 #    - "ECS Systems":

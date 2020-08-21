@@ -15,13 +15,13 @@ An agent will often have several of these behaviours which are blended together 
 
 In Crowds, each type of steering behaviour is represented by a MonoBehaviour. In some cases you may want several of the same steering behaviour attached to a single Agent (e.g. _Flee_ from 2 things simultaneously), but Unity does not allow multiple copies of the same component. To solve this problem the Crowds steering MonoBehaviours can each represent several copies of the same steering action:
 
-![Indecisive Agent](../../images/SteerForFleeInspectorTwoInstances.png)
+![Two Instances Of SteerForFlee](../../images/SteerForFleeTwoInstances.png)
 
 This `SteerForFlee` inspector shows two flee actions named `FleeOne` and `FleeTwo` fleeing from two different points.
 
 ### Context Aware Steering Behaviours
 
-Basic steering behaviours as described above have been used in many games over the years. However they have a serious problem; if two steering behaviours point in opposite directions blending them together will result in the agent standing still! This can result in agents appearing indecisive as they stay around the midpoint or very slowly move to one side. A real person would make a decision and go to one of the two locations.
+Basic steering behaviours as described above have been used in many games over the years. However they have a serious problem: if two steering behaviours point in opposite directions they will cancel out and the agent will not move! This can result in agents appearing indecisive as they stay around the midpoint or very slowly move to one side. A real person would make a decision and go to one of the two locations.
 
 ![Indecisive Agent](../../images/SteeringBehavioursNoMovement.png)
 

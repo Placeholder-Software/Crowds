@@ -1,10 +1,10 @@
 ## Getting Started
 
 1. Install Crowds from the Unity Asset Store.
-2. Install the [required packages](../Requirements/).
-3. Follow the [How To: Create An Agent](..HowTo/CreateAnAgent/) guide.
-4. Add [steering behaviours](SteeringBehaviours/) to control the movement of the agent around the scene.
-5. Add [sensors](SteeringBehaviours#Danger%20Sensors) to make the agent avoid things in the scene.
+2. Install the [required packages](../Requirements.md).
+3. Follow the [How To: Create An Agent](../../HowTo/CreateAnAgent/) guide.
+4. Add [steering behaviours](../SteeringBehaviours.md) to control the movement of the agent around the scene.
+5. Add [sensors](../SteeringSensors.md) to avoid things in the scene.
 
 ## Basic Concepts
 
