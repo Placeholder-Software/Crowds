@@ -1,18 +1,14 @@
-# SteerForArrival
+# SteerForCohesion
 
-This MonoBehaviour causes an agent to steer directly towards a target point and slow to a stop as it arrives.
+This MonoBehaviour causes an agent to steer in the same direction as nearby agents.
 
 ## Inspector
 
-![EntityIdentity Inspector](../../../../images/SteerForArrivalInspector.png)
+![EntityIdentity Inspector](../../../../images/SteerForCohesionInspector.png)
 
-#### Target
+#### Name
 
 The target position (in 2D space) that the agent is walking towards. For example if you have a `transform` to walk towards you would set this to the `XZ` position of the `transform`.
-
-#### Slowing Distance
-
-The Agent will begin slowing to a stop when it is this far from the destination.
 
 #### Weight
 
@@ -24,7 +20,19 @@ The units for the `Speed` property. `Direct` means that the `Speed` setting is a
 
 #### Speed
 
-The speed to move towards the target at. The units of this value depend on the `Speed Type` property.
+The speed to move away from the target at. The units of this value depend on the `Speed Type` property.
+
+#### Max Prediction Time
+
+todo
+
+#### Arrival Distance
+
+todo
+
+#### Max Distance
+
+todo
 
 ### Add New/Delete
 

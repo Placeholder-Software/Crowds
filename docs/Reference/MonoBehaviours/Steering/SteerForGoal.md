@@ -28,4 +28,34 @@ The units for the `Speed` property. `Direct` means that the `Speed` setting is a
 
 The speed to move away from the target at. The units of this value depend on the `Speed Type` property.
 
-todo: add script methods (after PR #92)
+#### Autocomplete Off Mesh Links
+
+todo
+
+## Scripting
+
+#### `bool IsApproachingOffMeshLink`
+
+Indicates if the Agent is on "final approach" to an off-mesh link. This means there are no more corners in the path between the current position of the agent and the start of the off-mesh link.
+
+#### `PolygonId? OffMeshLinkPolygon`
+
+Gets the `PolygonId` of the off-mesh link which the agent is approaching. Returns `null` is `IsApproachingOffMeshLink` is `false`.
+
+#### `bool IsWaitingAtOffMeshLink`
+
+Indicates if the agent is standing still at the start of an off-mesh link, waiting to complete the link.
+
+#### `float? DistanceToOffMeshLink`
+
+Indicates the distance to the start of the next off-mesh link. Returns `null` is `IsApproachingOffMeshLink` is `false`.
+
+#### `PathfindingResultWaypoint? NextWaypoint`
+
+Returns the next corner in the path which the agent is following. Returns `null` if there is no current path.
+
+#### `CompleteOffMeshLink(bool teleport, bool checkOffPath)`
+
+Mark the off-mesh link as completed.
+
+`teleport` indicates if the agent should instantly teleport to the end of the off-mesh link or if a new path should be found and followed. `checkOffPath` indicates if the teleport/repathing behaviour should only be done if the agent is off path, otherwise the agent will simply continue following the path it was already on.

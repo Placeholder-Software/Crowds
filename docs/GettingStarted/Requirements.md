@@ -16,9 +16,3 @@ Crowds has been built and tested to work with the listed versions. As new versio
 Crowds will support Unity LTS versions and the latest Unity TECH version starting with `2019.3`.
 
 If you have a compatibility problem with a supported version of the Editor please contact us through [Discord](https://placeholder.software/discord), or report it on the [issue tracker](https://github.com/Placeholder-Software/Crowds/issues).
-
-
-
-
-
-todo: Retake all images with 2019.4 dark theme

@@ -6,8 +6,6 @@ This MonoBehaviour causes an agent to steer randomly. It is not pure random nois
 
 ![SteerForWander Inspector](../../../../images/SteerForWanderInspector.png)
 
-todo: take that screenshot ^
-
 #### Use Worley Noise
 
 Select if the noise used will be simplex or worley. Simplex noise is more random - the agent will smoothly change direction most of the time. Worley noise is more irregular - the agent will wander a short distance in a direction before more rapidly turning to a new direction.
@@ -28,4 +26,6 @@ The units for the `Speed` property. `Direct` means that the `Speed` setting is a
 
 The speed to wander at. The units of this value depend on the `Speed Type` property.
 
-todo: refactor for buffer steering
+### Add New/Delete
+
+todo
