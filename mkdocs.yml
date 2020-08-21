@@ -17,8 +17,8 @@ extra_css:
 nav:
 - "Home": "index.md"
 - "Getting Started":
-    - "Requirements": "GettingStarted/Requirements.md"
     - "Quick Start": "GettingStarted/QuickStart.md"
+    - "Requirements": "GettingStarted/Requirements.md"
     - "What Are Steering Behaviours?": "GettingStarted/SteeringBehaviours.md"
     - "What Is Local Avoidance?": "GettingStarted/LocalAvoidance.md"
 #    - "Formations": "GettingStarted/Formations.md"

@@ -6,8 +6,6 @@
 4. Add [steering behaviours](SteeringBehaviours/) to control the movement of the agent around the scene.
 5. Add [sensors](SteeringBehaviours#Danger%20Sensors) to make the agent avoid things in the scene.
 
-If you are unsure how to achieve the type of movement you want have a look at the `How To` section of this documentation to see if there is a tutorial covering what you need. If there isn't then come and ask for help on [Discord](https://placeholder.software/discord).
-
 ## Basic Concepts
 
 The **Getting Started** section of the docs explains the basic concepts of how Crowds works, what [Local Avoidance](../LocalAvoidance.md) is, how [Context Aware Steering Behaviours](../SteeringBehaviours.md) solve the pitfalls of traditional steering behaviours and how [Steering Sensors](../SteeringSensors.md) drive can inject gameplay into movement to create more intelligent behaviour.
@@ -18,4 +16,4 @@ Crowds includes a number of demo scenes which introduce the basic concepts of th
 
 ## How To
 
-The **How To** section of the docs has a number of minimal tutorials for common scenarios. If you're not sure how to achieve something with Crowds try searching through these guides to see if one explains how to do what you want.
+The **How To** section of the docs has a number of minimal tutorials for common scenarios. If you're not sure how to achieve something with Crowds try searching through these guides to see if one explains how to do what you want. If there isn't a suitable guide then come and ask for help on [Discord](https://placeholder.software/discord).

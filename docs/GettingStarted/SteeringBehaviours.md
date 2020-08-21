@@ -13,48 +13,24 @@ An agent will often have several of these behaviours which are blended together 
 
 ### Multiple Steering Behaviours
 
-todo: explain buffer system for steering behaviours
+In Crowds, each type of steering behaviour is represented by a MonoBehaviour. In some cases you may want several of the same steering behaviour attached to a single Agent (e.g. _Flee_ from 2 things simultaneously), but Unity does not allow multiple copies of the same component. To solve this problem the Crowds steering MonoBehaviours can each represent several copies of the same steering action:
 
+![Indecisive Agent](../../images/SteerForFleeInspectorTwoInstances.png)
 
+This `SteerForFlee` inspector shows two flee actions named `FleeOne` and `FleeTwo` fleeing from two different points.
 
+### Context Aware Steering Behaviours
 
-
-
-
-
-
-todo: remove context and sensors explanation to somewhere else
-
-### Steering Context
-
-Basic steering behaviours as described above have been used in many games over the years. However they have a serious problem; if two steering behaviours point in opposite directions blending them together will result in the agent standing still! This basic approach can result in an agent appearing "indecisive" as it hovers around the midpoint or very slowly moves to one side.
+Basic steering behaviours as described above have been used in many games over the years. However they have a serious problem; if two steering behaviours point in opposite directions blending them together will result in the agent standing still! This can result in agents appearing indecisive as they stay around the midpoint or very slowly move to one side. A real person would make a decision and go to one of the two locations.
 
 ![Indecisive Agent](../../images/SteeringBehavioursNoMovement.png)
 
-Crowds solves this problem with a "steering context". Each steering behaviours outputs how much it wants to move in a set of fixed directions and then the final direction is picked from this set. The final decision is made by selecting the direction which most steering behaviours want to move in. This means that you can add any numbers of steering behaviours to influence the behaviour of an agent in many ways. For the above example the context would look like this:
+Crowds solves this problem with "Context Aware Steering behaviours". Each steering behaviour outputs how much it wants to move in a direction and then a final decision is made by finding the most desirable direction to move in. This means that you can add any numbers of steering behaviours to influence the behaviour of an agent in many ways and the agent will still be decisive.
+
+For the above example the steering behaviours would output that they want to move left and move right:
 
 ![Steering Context Graph](../../images/SteeringContextGraph.png)
 
-There are two peaks (move left, and move right). In this example the two peaks are identical and so an arbitrary one is chosen.
+The final decision picks the best direction - in this case because it's a tie an arbitrary decision is made. This is much more realistic than taking the average direction; a person who wants to walk to two locations won't move towards the midpoint they will instead walk to one and then the other.
 
-### Danger Sensors
-
-Steering behaviours indicate a direction that an agent _should_ to move in. Danger sensors do the opposite: they sense directions which the agent _should not_ move in. Danger sensors work in a similar way to steering behaviours, each sensor adds some weight to directions it considers risky, the final danger map is used to modify the steering context before picking a direction.
-
-![A Danger](../../images/SteeringWithDanger.png)
-
-In this example there is a dangerous lion to the right. A sensor that detects lions adds some danger to the steering context in that direction which reduces the desire of the agent to move to the in that direction. Now the tie is broken and the agent will always move to the left because it is less dangerous.
-
-![Steering Context Graph With Danger](../../images/SteeringContextGraphWithDanger.png)
-
-Crowds includes a library of easy to use sensors which can be adapted to a number of different scenarios:
-
- - [**AgentProximitySensor**](../../Reference/MonoBehaviours/Sensing/AgentProximitySensor)
- - [**CircleSensor**](../../Reference/MonoBehaviours/Sensing/CircleSensor)
- - [**GameObjectSensor**](../../Reference/MonoBehaviours/Sensing/GameObjectSensor)
- - [**LineSensor**](../../Reference/MonoBehaviours/Sensing/LineSensor)
- - [**PointSensor**](../../Reference/MonoBehaviours/Sensing/PointSensor)
-
-### How To
-
-todo: link some how-to guides on steering and sensors
+The steering context is not just used for steering behaviours (deciding where to go) but can also be used for steering sensors (deciding where **not** to go). This can be used to inject gameplay considerations into the movement system, making it appear as if agents are aware of the scene and avoiding enemies/dangers. [Read more about Steering Sensors](../SteeringSensors.md).

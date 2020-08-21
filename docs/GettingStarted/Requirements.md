@@ -11,8 +11,12 @@ Crowds requires several packages installed from the Unity package manager:
 
 Crowds has been built and tested to work with the listed versions. As new versions of these packages are released we will update to support them as soon as possible. If you encounter a compatibility issue with any of these packages please report it on the [issue tracker](https://github.com/Placeholder-Software/Crowds/issues) and we'll fix it right away.
 
-## Unity Editor Version
+!!! note
+    Crowds is built with DOTS, ECS and the Job System for the best performance with large numbers of agents.
+    However, **you do not have to understand ECS** to use Crowds! Setup of agents is done with classic MonoBehaviours and GameObjects.
 
-Crowds will support Unity LTS versions and the latest Unity TECH version starting with `2019.3`.
+## Unity Version
+
+Crowds will support Unity LTS versions and the latest Unity TECH version starting with `2019.4`.
 
 If you have a compatibility problem with a supported version of the Editor please contact us through [Discord](https://placeholder.software/discord), or report it on the [issue tracker](https://github.com/Placeholder-Software/Crowds/issues).
