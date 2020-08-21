@@ -1,14 +1,14 @@
 ## Getting Started
 
 1. Install Crowds from the Unity Asset Store.
-2. Install the [required packages](../Requirements.md).
+2. Install the [required packages](../Requirements).
 3. Follow the [How To: Create An Agent](../../HowTo/CreateAnAgent/) guide.
-4. Add [steering behaviours](../SteeringBehaviours.md) to control the movement of the agent around the scene.
-5. Add [sensors](../SteeringSensors.md) to avoid things in the scene.
+4. Add [steering behaviours](../SteeringBehaviours) to control the movement of the agent around the scene.
+5. Add [sensors](../SteeringSensors) to avoid things in the scene.
 
 ## Basic Concepts
 
-The **Getting Started** section of the docs explains the basic concepts of how Crowds works, what [Local Avoidance](../LocalAvoidance.md) is, how [Context Aware Steering Behaviours](../SteeringBehaviours.md) solve the pitfalls of traditional steering behaviours and how [Steering Sensors](../SteeringSensors.md) drive can inject gameplay into movement to create more intelligent behaviour.
+The **Getting Started** section of the docs explains the basic concepts of how Crowds works, what [Local Avoidance](../LocalAvoidance) is, how [Context Aware Steering Behaviours](../SteeringBehaviours) solve the pitfalls of traditional steering behaviours and how [Steering Sensors](../SteeringSensors) drive can inject gameplay into movement to create more intelligent behaviour.
 
 ## Demo Scenes
 
