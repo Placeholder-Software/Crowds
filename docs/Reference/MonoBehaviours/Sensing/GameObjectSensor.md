@@ -1,16 +1,35 @@
 # GameObjectSensor
 
-This MonoBehaviour detects another GameObject as a danger and discourages steering towards it.
+This MonoBehaviour detects another GameObject as a danger and discourages steering towards it. This is similar to a [PointSensor](../PointSensor.md) where the point is always at the location of a particular GameObject.
 
 ## Inspector
 
 ![EntityIdentity Inspector](../../../../images/GameObjectSensorInspector.png)
 
-^^ todo: take that screenshot
+#### Name
 
-#### todo: Property Name
+The unique ID of this sensor. Used to identify this instance in scripts.
 
-todo: Property description.
+#### Menace
+
+The GameObject which will be detected as a danger.
+
+#### Invert
+
+If checked, all directions _away_ from the GameObject will be detected as a danger. If unchecked the direction _towards_ the GameObject will be detected as a danger.
+
+#### Negative Weight
+
+The importance of this negative sensor relative to other sensors.
+
+#### Negative Min Distance
+
+If the GameObject is closer than this distance, the full `Negative Weight` will be used.
+
+#### Negative Max Distance
+
+If the GameObject is farther than this distance, the sensor will be not detect it.
+
 
 ## Scripting
 
