@@ -6,7 +6,7 @@ As `Urgency` increases the `Priority` of the agent increases (meaning it will yi
 
 ## Inspector
 
-![EntityIdentity Inspector](../images/UrgencyInspector.png)
+![EntityIdentity Inspector](../../../../images/UrgencyInspector.png)
 
 #### Proxy Create Threshold
 

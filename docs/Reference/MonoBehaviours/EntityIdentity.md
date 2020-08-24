@@ -7,7 +7,7 @@ This MonoBehaviour automatically maintains a connection between a GameObject in 
 
 ## Inspector
 
-![EntityIdentity Inspector](../images/EntityIdentityInspector.png)
+![EntityIdentity Inspector](../../../../images/EntityIdentityInspector.png)
 
 #### Keep Alive
 

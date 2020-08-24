@@ -4,7 +4,7 @@ This MonoBehaviour automatically sets the `GoalPosition`, `GoalRadius` and `Goal
 
 ## Inspector
 
-![EntityIdentity Inspector](../../images/GoalInspector.png)
+![EntityIdentity Inspector](../../../../images/GoalInspector.png)
 
 #### Navigator
 

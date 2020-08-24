@@ -4,7 +4,7 @@ This Monobehaviour sychronises the Crowds simulation and the GameObjects in the 
 
 ## Inspector
 
-![EntityIdentity Inspector](../images/SynchroniserInspector.png)
+![EntityIdentity Inspector](../../../../images/SynchroniserInspector.png)
 
 #### Preset
 

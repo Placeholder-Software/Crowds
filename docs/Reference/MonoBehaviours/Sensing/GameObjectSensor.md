@@ -30,7 +30,6 @@ If the GameObject is closer than this distance, the full `Negative Weight` will 
 
 If the GameObject is farther than this distance, the sensor will be not detect it.
 
-
 ## Scripting
 
 #### `Create(string instanceName)`
