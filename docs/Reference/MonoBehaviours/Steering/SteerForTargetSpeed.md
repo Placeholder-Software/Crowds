@@ -22,9 +22,9 @@ The units for the `Speed` property. `Direct` means that the `Speed` setting is a
 
 The speed to move towards the target at. The units of this value depend on the `Speed Type` property.
 
-### Add New/Delete
+#### Delete/Add New
 
-Create a new instance of this steering behaviour or delete an existing instance.
+Create a new instance of this steering action or delete an existing instance.
 
 ## Scripting
 

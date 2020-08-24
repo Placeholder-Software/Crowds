@@ -26,9 +26,9 @@ The units for the `Speed` property. `Direct` means that the `Speed` setting is a
 
 The speed to move away from the target at. The units of this value depend on the `Speed Type` property.
 
-### Add New/Delete
+#### Delete/Add New
 
-Create a new instance of this steering behaviour or delete an existing instance.
+Create a new instance of this steering action or delete an existing instance.
 
 ## Scripting
 
@@ -43,3 +43,9 @@ Try to get an existing steering action with the given name. Returns `null` if th
 #### `bool TryDelete(string instanceName)`
 
 Try to delete the steering action with the given name. Returns `true` if an action with that name existed and was deleted.
+
+
+
+
+
+todo: changed by negative sensing PR - does anything here need to change (e.g. new inspector property)?

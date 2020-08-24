@@ -22,9 +22,9 @@ The units for the `Velocity` property. `Direct` means that the `Velocity` will b
 
 The velocity which this agent should move at (speed and direction).
 
-### Add New/Delete
+#### Delete/Add New
 
-Create a new instance of this steering behaviour or delete an existing instance.
+Create a new instance of this steering action or delete an existing instance.
 
 ## Scripting
 

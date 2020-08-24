@@ -34,9 +34,9 @@ The distance from the average point to begin slowing to a stop.
 
 The maximum distance of an agent to include in cohesion steering. Agents further away than this will be ignored.
 
-### Add New/Delete
+#### Delete/Add New
 
-Create a new instance of this steering behaviour or delete an existing instance.
+Create a new instance of this steering action or delete an existing instance.
 
 ## Scripting
 

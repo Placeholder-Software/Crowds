@@ -22,9 +22,9 @@ Only agents within this distance will contribute to the average direction.
 
 Only agents in front of the agent (within this angle) will contribute to the average direction.
 
-### Add New/Delete
+#### Delete/Add New
 
-Create a new instance of this steering behaviour or delete an existing instance.
+Create a new instance of this steering action or delete an existing instance.
 
 ## Scripting
 

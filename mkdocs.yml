@@ -65,7 +65,7 @@ nav:
             - "SteerForTargetVelocity": "Reference/MonoBehaviours/Steering/SteerForTargetVelocity.md"
             - "SteerForWander": "Reference/MonoBehaviours/Steering/SteerForWander.md"
         - "Sensing":
-            - "AgentProximitySensor": "Reference/MonoBehaviours/Sensing/AgentProximitySensor.md"
+#            - "AgentProximitySensor": "Reference/MonoBehaviours/Sensing/AgentProximitySensor.md"
             - "CircleSensor": "Reference/MonoBehaviours/Sensing/CircleSensor.md"
             - "GameObjectSensor": "Reference/MonoBehaviours/Sensing/GameObjectSensor.md"
             - "LineSensor": "Reference/MonoBehaviours/Sensing/LineSensor.md"
