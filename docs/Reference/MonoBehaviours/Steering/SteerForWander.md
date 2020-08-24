@@ -47,9 +47,3 @@ Try to get an existing steering action with the given name. Returns `null` if th
 #### `bool TryDelete(string instanceName)`
 
 Try to delete the steering action with the given name. Returns `true` if an action with that name existed and was deleted.
-
-
-
-
-
-todo: changed by negative sensing PR - does anything here need to change (e.g. new inspector property)?

@@ -1,6 +1,6 @@
 # SteerForEvade
 
-This MonoBehaviour causes an agent to steer away from the predicted future position of another agent. If the supplied `transform` is not an agent this is exactly equivalent to [`SteerForFlee`](../SteerForFlee).
+This MonoBehaviour causes an agent to steer away from the predicted future position of another agent. If the supplied `transform` is not an agent this is exactly equivalent to [`SteerForFlee`](../SteerForFlee). Also acts as a danger sensor discouraging steering directly towards the other agent.
 
 ## Inspector
 
@@ -26,6 +26,18 @@ The units for the `Speed` property. `Direct` means that the `Speed` setting is a
 
 The speed to move away from the target at. The units of this value depend on the `Speed Type` property.
 
+#### Negative Weight
+
+The importance of this negative sensor relative to other sensors. Set to zero to disable the sensor aspect of this steering action.
+
+#### Negative Min Distance
+
+If the `Menace` is closer than this distance, the full `Negative Weight` will be used.
+
+#### Negative Max Distance
+
+If the `Menace` is farther than this distance, the sensor will be not detect it.
+
 #### Delete/Add New
 
 Create a new instance of this steering action or delete an existing instance.
@@ -43,9 +55,3 @@ Try to get an existing steering action with the given name. Returns `null` if th
 #### `bool TryDelete(string instanceName)`
 
 Try to delete the steering action with the given name. Returns `true` if an action with that name existed and was deleted.
-
-
-
-
-
-todo: changed by negative sensing PR - does anything here need to change (e.g. new inspector property)?
