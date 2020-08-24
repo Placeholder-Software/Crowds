@@ -1,6 +1,6 @@
 # SteerForCohesion
 
-This MonoBehaviour causes an agent to steer in the same direction as nearby agents.
+This MonoBehaviour causes an agent to [pursue](../SteerForPursue.md) the average location of all nearby agents.
 
 ## Inspector
 
@@ -24,15 +24,15 @@ The speed to move away from the target at. The units of this value depend on the
 
 #### Max Prediction Time
 
-todo
+The amount of time (in seconds) to predict the movement of nearby agents before steering for cohesion.
 
 #### Arrival Distance
 
-todo
+The distance from the average point to begin slowing to a stop.
 
 #### Max Distance
 
-todo
+The maximum distance of an agent to include in cohesion steering. Agents further away than this will be ignored.
 
 ### Add New/Delete
 
