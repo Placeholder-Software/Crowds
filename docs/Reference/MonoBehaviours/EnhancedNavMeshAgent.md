@@ -24,7 +24,7 @@ Automatically configures Crowds components to act in a similar way to the Unity 
 
 #### Speed
 
-Sets the maximum speed of this Agent. Equivalent to Crowds [`Navigator.MaximumSpeed`](../Navigator.md/#maximum-speed) property.
+Sets the maximum speed of this Agent. Equivalent to Crowds [`Navigator.MaximumSpeed`](../Navigator/#maximum-speed) property.
 
 #### Angular Speed
 
