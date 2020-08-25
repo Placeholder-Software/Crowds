@@ -10,6 +10,21 @@ Once the `EnhancedNavMeshAgent` MonoBehaviour has been added click `Import From 
 
 Finally click `Auto Configure Crowds` to automatically configure some default settings on the Crowds MonoBehaviours.
 
+### Differences
+
+The `Enhanced Nav Mesh Agent` is not identical to the `Nav Mesh Agent`. The follows properties are not supported:
+ - todo:autoBraking
+ - todo:currentOffMeshLinkData.activated
+ - todo:currentOffMeshLinkData.linkType
+ - todo:currentOffMeshLinkData.offMeshLink
+ - todo:nextOffMeshLinkData.activated
+ - todo:nextOffMeshLinkData.linkType
+ - todo:nextOffMeshLinkData.offMeshLink
+ - todo:isStopped
+ - todo:navMeshOwner
+ - todo:nextPosition.set
+ - todo:velocity.set
+
 ## Inspector
 
 ![Enhanced Nav Mesh Agent Inspector](../../../images/EnhancedNavMeshAgentInspector.png)
@@ -24,51 +39,51 @@ Automatically configures Crowds components to act in a similar way to the Unity 
 
 #### Speed
 
-Sets the maximum speed of this Agent. Equivalent to Crowds [`Navigator.MaximumSpeed`](../Navigator.md#maximum-speed) property.
+Sets the maximum speed of this Agent. Equivalent to Crowds [`Navigator.MaximumSpeed`](../Navigator#maximum-speed) property.
 
 #### Angular Speed
 
-Sets the maximum turning speed of this Agent (degrees/second). Equivalent to Crowds [`Navigator.MaximumAngularSpeed`](../Navigator.md#maximum-angular-speed) property.
+Sets the maximum turning speed of this Agent (degrees/second). Equivalent to Crowds [`Navigator.MaximumAngularSpeed`](../Navigator#maximum-angular-speed) property.
 
 #### Acceleration
 
-Sets the maximum acceleration of this Agent. Equivalent to Crowds [`Navigator.MaximumAcceleration`](../Navigator.md#maximum-acceleration) property.
+Get/set the maximum acceleration of this Agent. Equivalent to Crowds [`Navigator.MaximumAcceleration`](../Navigator#maximum-acceleration) property.
 
 #### Stopping Distance
 
-Sets how far before the end of a path the agent should begin slowing to a stop. Equivalent to Crowds [`SteerForGoal.SlowingDistance`](../Steering/SteerForGoal.md#slowing-distance) property.
+Get/set how far before the end of a path the agent should begin slowing to a stop. Equivalent to Crowds [`SteerForGoal.SlowingDistance`](../Steering/SteerForGoal#slowing-distance) property.
 
 #### Auto Braking
 
-todo
+Disabling this is not supported by Crowds. Always enabled.
 
 #### Radius
 
-todo
+Get/set the radius of this agent when avoiding collisions with other agents. Equivalent to Crowds [`Navigator.Radius`](../Navigator#radius) property.
 
 #### Height
 
-todo
+Get/set the height of this agent when avoiding collisions with other agents. Equivalent to Crowds [`Navigator.Height`](../Navigator#height) property.
 
 #### Quality
 
-todo
+Get/set the quality of local avoidance algorithm to use. Currently Crowds does not support multiple quality levels - setting this to `None` is equivalent to setting the [`Navigator.AvoidOtherAgents`](../Navigator#avoid-local-obstacles) property to false.
 
 #### Priority
 
-todo
+Get/set the priority of this agent compared to other agents in local avoidance, a higher priority will cause other agents to yield if they are in the way of this agent. Equivalent to Crowds [`Navigator.Priority`](../Navigator#priority-range) property.
 
 #### Auto Traverse Off Mesh Link
 
-todo
+Get/set if this agent should automatically teleport across off-mesh links. Equivalent to Crowds [`SteerForGoal.AutocompleteOffMeshLinks`](../Steering/SteerForGoal#autocomplete-off-mesh-links) property.
 
 #### Auto Repath
 
-todo
+Get/set if this agent should automatically generate a new path to the goal when the path becomes stale (e.g. the goal moves). Equivalent to Crowds [`Navigator.EnableAutoRepathing`](../Navigator#disable-automatic-repathing) property.
 
 #### Area Mask
 
-todo
+Get/set the area mask to use for pathfinding queries. Equivalent to Crowds [`Navigator.EnableAutoRepathing`](../Navigator#AreaMask) property.
 
 ## Scripting
 

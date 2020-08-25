@@ -39,6 +39,10 @@ If the agent is not on it's calculated path for this many seconds the path will 
 
 How far ahead of the agent should path points be calculated.
 
+#### Disable Automatic Repathing
+
+todo
+
 ### Steering
 
 #### Ideal Speed
@@ -59,7 +63,7 @@ Whether or not this agent is an obstacle to other agents. If set to `false` othe
 
 #### Avoid Local Obstacles
 
-Whether or not this agent shoiuld avoid obstacles (walls and other agents).
+Whether or not this agent should avoid obstacles (walls and other agents).
 
 #### Priority (Range)
 
@@ -142,6 +146,10 @@ Set the radius of the goal position. The agent will aim to arrive somewhere with
 #### GoalVelocity
 
 Set the velocity of the goal position. The agent will aim to match this velocity when it is within the radius.
+
+#### AreaMask
+
+todo
 
 ## Script Methods
 
