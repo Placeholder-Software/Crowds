@@ -12,7 +12,7 @@ Finally click `Auto Configure Crowds` to automatically configure some default se
 
 ## Inspector
 
-![Enhanced Nav Mesh Agent Inspector](../../../../images/EnhancedNavMeshAgentInspector.png)
+![Enhanced Nav Mesh Agent Inspector](../../../images/EnhancedNavMeshAgentInspector.png)
 
 #### Import From Nav mesh Agent
 
@@ -24,19 +24,19 @@ Automatically configures Crowds components to act in a similar way to the Unity 
 
 #### Speed
 
-Sets the maximum speed of this Agent. Equivalent to Crowds [`Navigator.MaximumSpeed`](../Navigator/#maximum-speed) property.
+Sets the maximum speed of this Agent. Equivalent to Crowds [`Navigator.MaximumSpeed`](../Navigator.md#maximum-speed) property.
 
 #### Angular Speed
 
-todo
+Sets the maximum turning speed of this Agent (degrees/second). Equivalent to Crowds [`Navigator.MaximumAngularSpeed`](../Navigator.md#maximum-angular-speed) property.
 
 #### Acceleration
 
-todo
+Sets the maximum acceleration of this Agent. Equivalent to Crowds [`Navigator.MaximumAcceleration`](../Navigator.md#maximum-acceleration) property.
 
 #### Stopping Distance
 
-todo
+Sets how far before the end of a path the agent should begin slowing to a stop. Equivalent to Crowds [`SteerForGoal.SlowingDistance`](../Steering/SteerForGoal.md#slowing-distance) property.
 
 #### Auto Braking
 
