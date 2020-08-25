@@ -12,7 +12,7 @@ Finally click `Auto Configure Crowds` to automatically configure some default se
 
 ## Inspector
 
-![SteerForWander Inspector](../../../../images/EnhancedNavMeshAgentInspector.png)
+![Enhanced Nav Mesh Agent Inspector](../../../../images/EnhancedNavMeshAgentInspector.png)
 
 #### Import From Nav mesh Agent
 
