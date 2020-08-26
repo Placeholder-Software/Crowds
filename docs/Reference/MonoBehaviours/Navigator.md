@@ -77,51 +77,59 @@ Whether or not this agent should avoid obstacles (walls and other agents).
 
 #### Priority (Range)
 
-Priority determines how much an agent will yield to avoid a collision with another agent. The ratio of their priorities determines how much each agent yields.
+If two agents are walking directly towards each other priority determines how much each agent yields. A difference of `0` means they both avoid the collision at equal amount. A difference of `1` or more means that the higher priority agent does not yield at all. When the agent is created a random value within the range is chosen.
 
-#### Turning Bias (Range)
+#### Enable Priority Zones
 
-Turning bias which way an agent prefers to turn to avoid a collision. If many agents in a crowd share the same bias the movement of the crowd will flow much more smoothly.
+Allow [priority zones](../Zones/PriorityZone.md) to affect the priority of this agent.
 
-#### Advanced Configuration
+#### Belongs To/Collides With/Group Id
 
-Toggle how this agent is configured. When enabled you can set the `Personal Space Radius`, `Time Horizon (Obstacles)`, `Time Horizon (Agents)`, `Max Neighbour Search Radius`, `Max Neighbour Count` and `Personal Space` properties. When disabled you can set the `Carefulness` and `Extraversion` properties which will automatically determine reasonable values for the advanced properties.
+Configure the [collision filter](https://docs.unity3d.com/Packages/com.unity.physics@latest/manual/collision_queries.html#filtering) to use for this agent when detecting priority zones.
+
+#### Personality Auto Configuration
+
+If this is enabled the "personality" (i.e. configuration for local avoidance) of this agent can automatically be configured from two parameters - carefulness and extraversion. When this is disabled all of the personaility parameters can be set manually.
 
 #### Carefulness (Range)
 
-This property is only available if `Advanced Configuration` is disabled.
+This property is only available if `Personality Auto Configuration` is disabled.
 
 An agent with a high carefulness will try harder to avoid collisions with other agents in the crowd. This can cause a more erratic movement.
 
 #### Extraversion (Range)
 
-This property is only available if `Advanced Configuration` is disabled.
+This property is only available if `Personality Auto Configuration` is disabled.
 
 An agent with high extraversion will try harder to push through the crowd. This can cause more collisions.
 
 #### Personal Space Radius
 
-This property is only available if `Advanced Configuration` is enabled.
+This property is only available if `Personality Auto Configuration` is disabled.
 
 The radius which local avoidance will attempt to keep clear of other agents. See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 
 #### Time Horizon (Obstacles)
 
-This property is only available if `Advanced Configuration` is enabled.
+This property is only available if `Personality Auto Configuration` is disabled.
 
 How far ahead in time (seconds) the agent will attempt to avoid collisions with static obstacles (e.g. walls). See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 
 #### Time Horizon (Agents)
 
-This property is only available if `Advanced Configuration` is enabled.
+This property is only available if `Personality Auto Configuration` is disabled.
 
 How far ahead in time (seconds) the agent will attempt to avoid collisions with other agents. See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 
 #### Max Neighbour Search Radius
 
+This property is only available if `Personality Auto Configuration` is disabled.
+
 The size of the circle around this agent which will be searched for other agents to avoid. See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 
 #### Max Neighbour Count
+
+This property is only available if `Personality Auto Configuration` is disabled.
 
 The maximum number of agents to avoid simultaneously. See [Local Avoidance](/GettingStarted/LocalAvoidance) for more details.
 

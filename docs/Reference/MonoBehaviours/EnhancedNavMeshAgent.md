@@ -113,17 +113,18 @@ Performs the same function as `NavMeshAgent.CalculatePath`. However, this is mar
 
 #### `PathfindingTask CalculatePathAsync(Vector3 targetPosition, int nodePoolSize = 4096)`
 
-Begins calculating a path from the current agent position to the `targetPosition`. This work is performed off the main thread so it may take several frames to complete. It can be used like this:
+Begins calculating a path from the current agent position to the `targetPosition`. Unlike the `CalculatePath` method this starts the pathfinding work on a background thread, this means it does not impact performance by stalling the main thread.
 
 ```
 // Start pathfind
 var task = agent.CalculatePathAsync(target);
 
-// Every frame, check if it's complete in Update
+// Every frame, check if it's complete yet
 var result = task.TryGetResult();
 if (result.HasValue)
 {
     // Use path here
+    ...
 
     // Dispose result when you are done
     result.Dispose();

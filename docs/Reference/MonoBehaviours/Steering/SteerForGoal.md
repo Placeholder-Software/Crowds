@@ -6,7 +6,7 @@ The goal point can be set to have a velocity as well as a position, in this case
 
 ## Inspector
 
-![EntityIdentity Inspector](../../../../images/SteerForGoalInspector.png)
+![SteerForGoal Inspector](../../../../images/SteerForGoalInspector.png)
 
 #### Weight
 
