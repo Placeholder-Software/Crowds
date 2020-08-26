@@ -2,7 +2,7 @@
 
 This MonoBehaviour is a direct replacement for the Unity [NavMeshAgent](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html) MonoBehaviour. It implements the same properties and methods but internally is a Crowds agent. This provides an easy path to migrate from traditional a traditional NavMeshAgent based system to the higher quality Crowds system.
 
-### Migration
+## Migration
 
 To migrate a GameObject from a `NavMeshAgent` to an `EnhancedNavMeshAgent` simply add the `Enhanced Nav Mesh Agent` script to the GameObject. This will automatically create several other MonoBehaviours (`Synchroniser`, `Entity Identity`, `Convert To Entity`, `Navigator`, `Steer For Goal`), these are the Crowds behaviours which the `EnhancednavMeshAgent` will automatically configure.
 
@@ -10,20 +10,20 @@ Once the `EnhancedNavMeshAgent` MonoBehaviour has been added click `Import From 
 
 Finally click `Auto Configure Crowds` to automatically configure some default settings on the Crowds MonoBehaviours.
 
-### Differences
+## Differences
 
 The `Enhanced Nav Mesh Agent` is not identical to the `Nav Mesh Agent`. The follows properties are not supported:
- - todo:autoBraking
- - todo:currentOffMeshLinkData.activated
- - todo:currentOffMeshLinkData.linkType
- - todo:currentOffMeshLinkData.offMeshLink
- - todo:nextOffMeshLinkData.activated
- - todo:nextOffMeshLinkData.linkType
- - todo:nextOffMeshLinkData.offMeshLink
- - todo:isStopped
- - todo:navMeshOwner
- - todo:nextPosition.set
- - todo:velocity.set
+ - autoBraking - Crowds always uses autoBraking style behaviour.
+ - currentOffMeshLinkData.activated - It is not possible for Crowds to get this information from the Unity low level pathfinding API.
+ - currentOffMeshLinkData.linkType - It is not possible for Crowds to get this information from the Unity low level pathfinding API.
+ - currentOffMeshLinkData.offMeshLink - It is not possible for Crowds to get this information from the Unity low level pathfinding API.
+ - nextOffMeshLinkData.activated - It is not possible for Crowds to get this information from the Unity low level pathfinding API.
+ - nextOffMeshLinkData.linkType - It is not possible for Crowds to get this information from the Unity low level pathfinding API.
+ - nextOffMeshLinkData.offMeshLink - It is not possible for Crowds to get this information from the Unity low level pathfinding API.
+ - navMeshOwner - It is not possible for Crowds to get this information from the Unity low level pathfinding API.
+ - isStopped - Not Implemented. Open a feature request if you need this feature.
+ - nextPosition.set - Not Implemented. Open a feature request if you need this feature.
+ - velocity.set - Not Implemented. Open a feature request if you need this feature.
 
 ## Inspector
 

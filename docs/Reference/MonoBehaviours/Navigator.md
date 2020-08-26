@@ -6,6 +6,8 @@ This MonoBehaviour is the main behaviour which configures a gameObject as an int
 
 ![Navigator Inspector](../../../images/NavigatorInspector.png)
 
+todo: ^ retake after area mask has been added
+
 !!! note
     Some of the following properties set a range instead of a single value, when the agent is first initialised it will choose a random value in this range. This means that if you instantiate many prefabs of the same agent prefab they will all act slightly differently which significantly improves the quality of simulation for large crowds.
 
@@ -21,11 +23,19 @@ The height of the agent in the simulation. The agent will avoid obstacles (e.g. 
 
 Agent type used for pathfinding. Available types are configured in the Unity navigation window: `Window > AI > Navigation > Agents`.
 
+#### Area Mask
+
+The area mask which defines the walkable areas for this agent.
+
 ### Pathfinding
 
 #### Enable Pathing
 
-Allow this entity to automatically find a path to it's goal (if it has a goal).
+Allow this entity to find a path to it's goal (if it has a goal).
+
+#### Disable Automatic Repathing
+
+Disable automatically finding a new path when the path becomes stale (e.g. the goal moves).
 
 #### Repath Time
 
@@ -146,10 +156,6 @@ Set the radius of the goal position. The agent will aim to arrive somewhere with
 #### GoalVelocity
 
 Set the velocity of the goal position. The agent will aim to match this velocity when it is within the radius.
-
-#### AreaMask
-
-todo
 
 ## Script Methods
 
