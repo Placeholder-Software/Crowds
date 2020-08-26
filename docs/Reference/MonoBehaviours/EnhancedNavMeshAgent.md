@@ -37,6 +37,14 @@ Automatically copies settings from a Unity `NavMeshAgent` MonoBehaviour to this 
 
 Automatically configures Crowds components to act in a similar way to the Unity `NavMeshAgent`.
 
+#### Agent Type
+
+Sets which nav meshes this agent can move on. Equivalent to Crowds [Navigator.AgentType](../Navigator#agent-type) property.
+
+#### Base Offset
+
+Set the vertical offset between the navmesh point and the GameObject transform. Equivalent to Crowds [Synchroniser.BaseOffset](../Synchroniser#base-offset-y-axis)
+
 #### Speed
 
 Sets the maximum speed of this Agent. Equivalent to Crowds [`Navigator.MaximumSpeed`](../Navigator#maximum-speed) property.
@@ -67,7 +75,9 @@ Get/set the height of this agent when avoiding collisions with other agents. Equ
 
 #### Quality
 
-Get/set the quality of local avoidance algorithm to use. Currently Crowds does not support multiple quality levels - setting this to `None` is equivalent to setting the [`Navigator.AvoidOtherAgents`](../Navigator#avoid-local-obstacles) property to false.
+Get/set the quality of local avoidance algorithm to use.
+
+Currently Crowds does not support multiple quality levels. Setting this to `None` is equivalent to setting the [`Navigator.AvoidOtherAgents`](../Navigator#avoid-local-obstacles) property to false. Setting this to any other value is equivalent to setting [`Navigator.AvoidOtherAgents`](../Navigator#avoid-local-obstacles) to `true`
 
 #### Priority
 
@@ -87,4 +97,35 @@ Get/set the area mask to use for pathfinding queries. Equivalent to Crowds [`Nav
 
 ## Scripting
 
-todo
+Most of the scripting methods in the `EnhancedNavMeshAgent` are the same as the basic `NavMeshAgent`. Refer to the [Unity documentation](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html). This section documents methods/properties which are different from the normal Unity version.
+
+#### `bool SetPath([NotNull] NavMeshPath pathIn)`
+
+Performs the same function as `NavMeshAgent.SetPath`. However, this is marked as `Obsolete` in the `EnhancedNavMeshAgent` because it encourages extra allocations which are bad for performance. If possible, use the alternative `bool SetPath(in PathfindingResult pathIn)` method instead.
+
+#### `bool SetPath(in PathfindingResult pathIn)`
+
+Performs the same function as the basic `SetPath` method. This version is more performant.
+
+#### `bool CalculatePath(...)`
+
+Performs the same function as `NavMeshAgent.CalculatePath`. However, this is marked as `Obsolete` in the `EnhancedNavMeshAgent` because it encourages extra allocations which are bad for performance and also performs pathfinding on the main game thread which is _very_ bad for performance. If possible use the alternative `CalculatePathAsync` method instead.
+
+#### `PathfindingTask CalculatePathAsync(Vector3 targetPosition, int nodePoolSize = 4096)`
+
+Begins calculating a path from the current agent position to the `targetPosition`. This work is performed off the main thread so it may take several frames to complete. It can be used like this:
+
+```
+// Start pathfind
+var task = agent.CalculatePathAsync(target);
+
+// Every frame, check if it's complete in Update
+var result = task.TryGetResult();
+if (result.HasValue)
+{
+    // Use path here
+
+    // Dispose result when you are done
+    result.Dispose();
+}
+```

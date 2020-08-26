@@ -28,6 +28,10 @@ The transform of the GameObject will be copied into the simulation.
 
 The simulation transform will be copied into the GameObject
 
+##### Base Offset (Y Axis)
+
+The vertical displacement between the simulation position (always attached to the navmesh) and the GameObject transform.
+
 #### Every Frame
 
 These settings control which transform values (position and rotation) are copied between the GameObject and the simulation every frame. They are only enabled if the `Preset` is set to `Custom`.
