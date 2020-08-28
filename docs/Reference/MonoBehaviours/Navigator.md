@@ -7,6 +7,8 @@ This MonoBehaviour is the main behaviour which configures a gameObject as an int
 ![Navigator Inspector](../../../images/NavigatorInspector.png)
 
 todo: ^ retake after area mask has been added
+todo: ^ retake after negative zone
+ - todo: Add negative zone related properties to inspector section
 
 !!! note
     Some of the following properties set a range instead of a single value, when the agent is first initialised it will choose a random value in this range. This means that if you instantiate many prefabs of the same agent prefab they will all act slightly differently which significantly improves the quality of simulation for large crowds.
