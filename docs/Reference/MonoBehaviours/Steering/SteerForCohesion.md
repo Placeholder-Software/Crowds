@@ -2,6 +2,8 @@
 
 This MonoBehaviour causes an agent to [pursue](../SteerForPursue.md) the average location of all nearby agents.
 
+SteerForCohesion requires [Avoid Local Obstacles](../Navigator.md#avoid-local-obstacles) to be enabled.
+
 ## Inspector
 
 ![EntityIdentity Inspector](../../../../images/SteerForCohesionInspector.png)

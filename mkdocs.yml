@@ -60,6 +60,7 @@ nav:
             - "SteerForEvade": "Reference/MonoBehaviours/Steering/SteerForEvade.md"
             - "SteerForFlee": "Reference/MonoBehaviours/Steering/SteerForFlee.md"
             - "SteerForGoal": "Reference/MonoBehaviours/Steering/SteerForGoal.md"
+            - "SteerForInterpose": "Reference/MonoBehaviours/Steering/SteerForInterpose.md"
             - "SteerForPursue": "Reference/MonoBehaviours/Steering/SteerForPursue.md"
             - "SteerForTargetSpeed": "Reference/MonoBehaviours/Steering/SteerForTargetSpeed.md"
             - "SteerForTargetVelocity": "Reference/MonoBehaviours/Steering/SteerForTargetVelocity.md"
