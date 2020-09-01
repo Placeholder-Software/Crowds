@@ -8,9 +8,7 @@ To migrate a GameObject from a `NavMeshAgent` to an `EnhancedNavMeshAgent` simpl
 
 Once the `EnhancedNavMeshAgent` MonoBehaviour has been added click `Import From Nav Mesh Agent` to automatically copy all of the settings from the `Nav Mesh Agent` MonoBehaviour. This will disable the `Nav Mesh Agent` MonoBehaviour once it is complete.
 
-Finally click `Auto Configure Crowds` to automatically configure some default settings on the Overcrowded MonoBehaviours.
-
-//todo change that button to `Auto Configure Overcrowded`
+Finally click `Auto Configure Overcrowded` to automatically configure some default settings on the Overcrowded MonoBehaviours.
 
 ## Differences
 
@@ -34,8 +32,7 @@ The `Enhanced Nav Mesh Agent` is not identical to the `Nav Mesh Agent`. The foll
 
 Automatically copies settings from a Unity `NavMeshAgent` MonoBehaviour to this `EnhancedNavmeshAgent` and disables the `NavMeshAgent`.
 
-#### Auto Configure Crowds
-^^ todo: change title once button is changed to `Auto Configure Overcrowded`
+#### Auto Configure Overcrowded
 
 Automatically configures Overcrowded MonoBehaviours to act in a similar way to the Unity `NavMeshAgent`.
 
