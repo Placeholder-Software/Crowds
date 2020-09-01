@@ -6,6 +6,10 @@ This MonoBehaviour causes an agent to steer away from the predicted future posit
 
 ![EntityIdentity Inspector](../../../../images/SteerForEvadeInspector.png)
 
+#### Name
+
+The unique ID of this steering action. Used to identify this instance in scripts.
+
 #### Menace
 
 The `transform` which this Agent is evading.

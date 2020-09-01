@@ -6,6 +6,10 @@ This MonoBehaviour causes an agent to steer directly towards a target point and 
 
 ![EntityIdentity Inspector](../../../../images/SteerForArrivalInspector.png)
 
+#### Name
+
+The unique ID of this steering action. Used to identify this instance in scripts.
+
 #### Target
 
 The target position (in 2D space) that the agent is walking towards. For example if you have a `transform` to walk towards you would set this to the `XZ` position of the `transform`.
