@@ -1,6 +1,6 @@
 # Synchroniser
 
-This Monobehaviour sychronises the Crowds simulation and the GameObjects in the scene.
+This Monobehaviour sychronises the Overcrowded simulation and the GameObjects in the scene.
 
 ## Inspector
 
@@ -10,8 +10,8 @@ This Monobehaviour sychronises the Crowds simulation and the GameObjects in the 
 
 These presets automatically configure the other settings for common scenarios:
 
- - **No Sync**: Disables all other settings. No data will be copied between the Crowds simulation and the scene GameObjects.
- - **Initial Sync Only**: Transfrom will be copied from the GameObject into the simulation at the start. No per-frame syncing.
+ - **No Sync**: Disables all other settings. No data will be copied between the Overcrowded simulation and the scene GameObjects.
+ - **Initial Sync Only**: Transfrom will be copied from the GameObject into the simulation once at the start.
  - **GameObject Is Master**: Initial position is copied from GameObject. The simulation transform is overwritten with the GameObject transform every frame.
  - **Simulation Is Master**: Initial position is copied from GameObject. The GameObject transform is overwritten with the Simulation transform every frame.
  - **Custom**: Unlocks the other settings to allow a custom configuration.
@@ -38,7 +38,7 @@ These settings control which transform values (position and rotation) are copied
 
 ##### GameObject Transform ⇒ Simulation
 
-The GameObject transform will be copied into the simulation. When this is enabled the GameObject will not move and the simulation agent will stay wherever the GameObject is. Use this if you are moving the GameObject is response to the Crowds simulation with another script (e.g. [see this guide](/HowTo/AnimatedAgents)).
+The GameObject transform will be copied into the simulation. When this is enabled the GameObject will not move and the simulation agent will stay wherever the GameObject is. Use this if you are moving the GameObject in response to the Overcrowded simulation with another script (e.g. [see this guide](/HowTo/AnimatedAgents)).
 
 ##### Simulation ⇒ Translation
 

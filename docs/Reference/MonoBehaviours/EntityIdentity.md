@@ -1,5 +1,5 @@
 !!! warning
-    This article mentions the Unity ECS. Although Crowds uses the ECS internally you don't need to understand anything about the ECS to use Crowds!
+    This article mentions the Unity ECS. Although Overcrowded uses the ECS internally you don't need to understand anything about the ECS to use Overcrowded!
 
 # EntityIdentity
 

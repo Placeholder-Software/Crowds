@@ -13,7 +13,7 @@ An agent will often have several of these actions which are blended together to 
 
 ### Multiple Steering Actions
 
-In Crowds, each type of steering action is represented by a MonoBehaviour. In some cases you may want several of the same steering action attached to a single Agent (e.g. _Flee_ from 2 things simultaneously), but Unity does not allow multiple copies of the same MonoBehaviour. To solve this problem the Crowds steering MonoBehaviours can each represent several copies of the same steering action:
+In Overcrowded, each type of steering action is represented by a MonoBehaviour. In some cases you may want several of the same steering action attached to a single Agent (e.g. _Flee_ from 2 things simultaneously), but Unity does not allow multiple copies of the same MonoBehaviour. To solve this problem the Overcrowded steering MonoBehaviours can each represent several copies of the same steering action:
 
 ![Two Instances Of SteerForFlee](../../images/SteerForFleeTwoInstances.png)
 
@@ -25,7 +25,7 @@ Basic steering actions as described above have been used in many games over the 
 
 ![Indecisive Agent](../../images/SteeringBehavioursNoMovement.png)
 
-Crowds solves this problem with "Context Aware Steering Actions". Each steering action outputs how much it wants to move in a direction and then a final decision is made by finding the most desirable direction to move in. This means that you can add any numbers of steering actions to influence the movement of an agent in many ways and the agent will still appear to be decisive.
+Overcrowded solves this problem with "Context Aware Steering Actions". Each steering action outputs how much it wants to move in a direction and then a final decision is made by finding the most desirable direction to move in. This means that you can add any numbers of steering actions to influence the movement of an agent in many ways and the agent will still appear to be decisive.
 
 In the above example the steering action would output that they want to move left and move right:
 

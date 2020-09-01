@@ -1,8 +1,8 @@
 # Pathfinding
 
-Crowds includes a pathfinding system based on the built in Unity pathfinding system. The Crowds pathfinder performs all pathfinding work in a Job (multithreaded) and rate limits the amount of work done in each pathfinding job per frame so that pathfinding can never negatively impact frame rates.
+Overcrowded includes a pathfinding system based on the built in Unity pathfinding system. The Overcrowded pathfinder performs all pathfinding work in a Job (multithreaded) and rate limits the amount of work done in each pathfinding job per frame so that pathfinding can never negatively impact frame rates.
 
-In most cases you do **not** need to interact directly with the Crowds pathfinding system. If you want an agent to follow a path you should use the [`GoalPosition`](../HowTo/FollowPath.md) of the agent. If you just want to find a path between two locations you can simply use the Unity [pathfinding APIs](https://docs.unity3d.com/Manual/nav-Overview.html).
+In most cases you do **not** need to interact directly with the Overcrowded pathfinding system. If you want an agent to follow a path you should use the [`GoalPosition`](../HowTo/FollowPath.md) of the agent. If you just want to find a path between two locations you can simply use the Unity [pathfinding APIs](https://docs.unity3d.com/Manual/nav-Overview.html).
 
 ## Creating A Pathfinding Job
 
@@ -25,7 +25,7 @@ using (var q = new NavMeshQuery(NavMeshWorld.GetDefaultWorld(), Allocator.Persis
     // If you want to set area costs, do this:    
     var buffer = EntityManager.AddBuffer<PathfindingQueryCost>(entity);
     for (var i = 0; i < 32; i++)
-        buffer.Add(cost_if_area(i));
+        buffer.Add(cost_of_area(i));
 }
 ```
 
