@@ -41,4 +41,4 @@ Urgency increases when an agent is not making any progress and temporarily makes
 
 As urgency increases an agent automatically increases it's priority and reduces it's personal space radius. High priority forces other agents in the area to try harder to avoid collisions. A smaller personal space allows the agent to squeeze through narrow gaps which it could not previously fit through. When Urgency is very high (indicating that the agent has been failing to move for a long time) a proxy obstacle is created next to the agent in the direction it wants to travel. Other agents avoid the proxy obstacle which clears space for the agent to move into, this guarantees that an agent eventually makes progress.
 
-To add Urgency to an agent simply add an [Navigator](../../Reference/MonoBehaviours/Urgency) MonoBehaviour alongside the [Navigator](../../Reference/MonoBehaviours/Navigator) MonoBehaviour.
+To add Urgency to an agent simply add an [Urgency](../../Reference/MonoBehaviours/Urgency) MonoBehaviour alongside the [Navigator](../../Reference/MonoBehaviours/Navigator) MonoBehaviour.
