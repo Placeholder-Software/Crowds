@@ -11,17 +11,9 @@ Steering actions are a way of breaking down the complex job of steering an agent
 
 An agent will often have several of these actions which are blended together to form more complex and natural movements.
 
-### Multiple Steering Actions
-
-In Overcrowded, each type of steering action is represented by a MonoBehaviour. In some cases you may want several of the same steering action attached to a single Agent (e.g. _Flee_ from 2 things simultaneously), but Unity does not allow multiple copies of the same MonoBehaviour. To solve this problem the Overcrowded steering MonoBehaviours can each represent several copies of the same steering action:
-
-![Two Instances Of SteerForFlee](../../images/SteerForFleeTwoInstances.png)
-
-This `SteerForFlee` inspector shows two flee actions named `FleeOne` and `FleeTwo` fleeing from two different points.
-
 ### Context Aware Steering Actions
 
-Basic steering actions as described above have been used in many games over the years. However they have a serious problem: if two steering actions point in opposite directions they will cancel out and the agent will not move! This can result in agents appearing indecisive as they stay around the midpoint or very slowly move to one side. A real person would make a decision and go to one of the two locations.
+Basic steering actions as described above have been used in many games over the years. However they have a serious problem: if two steering actions point in opposite directions they will cancel out and the agent will not move! If no workaround is applied this can result in agents appearing indecisive as they stay around the midpoint of conflicting actions. A real person would make a decision and go to one of the two locations.
 
 ![Indecisive Agent](../../images/SteeringBehavioursNoMovement.png)
 
@@ -34,3 +26,16 @@ In the above example the steering action would output that they want to move lef
 The final decision picks the best direction - in this case because it's a tie an arbitrary decision is made. This is much more realistic than taking the average direction; a person who wants to walk to two locations won't move towards the midpoint they will instead walk to one and then the other.
 
 The steering context is not just used for steering actions (deciding where to go) but can also be used for steering sensors (deciding where **not** to go). This can be used to inject gameplay considerations into the movement system, making it appear as if agents are aware of the scene and avoiding enemies/dangers. [Read more about Steering Sensors](../SteeringSensors).
+
+### Multiple Steering Actions
+
+In Overcrowded, each type of steering action is represented by a MonoBehaviour. In some cases you may want several of the same steering action attached to a single Agent (e.g. _Flee_ from 2 things simultaneously), but Unity does not allow multiple copies of the same MonoBehaviour. To solve this problem the Overcrowded steering MonoBehaviours can each represent several copies of the same steering action:
+
+![Two Instances Of SteerForFlee](../../images/SteerForFleeTwoInstances.png)
+
+This `SteerForFlee` inspector shows two flee actions named `FleeOne` and `FleeTwo` fleeing from two different points.
+
+### Continued Reading
+
+[Steering Sensors](../SteeringSensors.md) adjust the steering context to discourage agents from walking in certain directions - such as towards gameplay dangers.
+[Local Avoidance](../LocalAvoidance.md) adjusts the output of context aware steering actions to avoid collisions with obstacles in the scene - such as walls and other agents.
