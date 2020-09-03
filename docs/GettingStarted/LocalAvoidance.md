@@ -1,12 +1,12 @@
 ## Local Avoidance
 
-Local Avoidance is a system which automatically adjusts the output from [Context Aware Steering Actions](../SteeringBehaviours.md) to avoid collisions with other agents. This significantly improves the appearance of groups of agents moving in close proximity. Overcrowded includes a novel **Multi Sampled Local Avoidance** algorithm which rapidly chooses collision free movement directions for every agent in the scene simultaneously.
+Local Avoidance is a system which automatically adjusts the output from [Context Aware Steering Actions](../SteeringBehaviours) to avoid collisions with other agents. This significantly improves the appearance of groups of agents moving in close proximity. Overcrowded includes a novel **Multi Sampled Local Avoidance** algorithm which rapidly chooses collision free movement directions for every agent in the scene simultaneously.
 
 ![Local Avoidance Steering](../../images/SteeringLocalAvoidance.png)
 
 ### Using Local Avoidance
 
-Local Avoidance is built into the core [Navigator](../../Reference/MonoBehaviours/Navigator.md) Monobehaviour. To use it simply [create an agent](../../HowTo/CreateAnAgent.md), open the [Navigator](../../Reference/MonoBehaviours/Navigator.md) inspector, turn on [`Block Other Agents`](../../Reference/MonoBehaviours/Navigator.md#block-other-agents) to make other agents avoid this agent and turn on [`Avoid Local Obstacles`](../../Reference/MonoBehaviours/Navigator.md#avoid-local-obstacles) to make this agent avoid nearby obstacles (including other agents).
+Local Avoidance is built into the core [Navigator](../../Reference/MonoBehaviours/Navigator) Monobehaviour. To use it simply [create an agent](../../HowTo/CreateAnAgent), open the [Navigator](../../Reference/MonoBehaviours/Navigator) inspector, turn on [`Block Other Agents`](../../Reference/MonoBehaviours/Navigator#block-other-agents) to make other agents avoid this agent and turn on [`Avoid Local Obstacles`](../../Reference/MonoBehaviours/Navigator#avoid-local-obstacles) to make this agent avoid nearby obstacles (including other agents).
 
 ### Configuring Local Avoidance
 
@@ -35,8 +35,10 @@ todo
 
 ### Urgency
 
-There will always be situations where a Local Avoidance algorithm will fail to find a collision free direction for some agents to move in. This can sometimes leave a few low priority agents stuck at the edges of a Crowd, failing to ever make any progress. Overcrowded includes an innovative solution to this problem: Urgency. Urgency increases when an agent is not making any progress and temporarily makes the agent more "selfish" - this allows it to push past the obstacle that was stopping it. This selfishness can help clear blockages in crowds and significantly improves the overall flow of agents through the scene even in areas where a conventional Local Avoidance algorithm would fail.
+There will always be situations where a Local Avoidance algorithm will fail to find a collision free direction for some agents to move in. This can sometimes leave a few low priority agents stuck at the edges of a Crowd, failing to ever make any progress. Overcrowded includes an innovative solution to this problem: Urgency.
+
+Urgency increases when an agent is not making any progress and temporarily makes the agent more "selfish" - this allows it to push past the obstacle that was stopping it. This selfishness can help clear blockages in crowds and significantly improves the overall flow of agents through the scene even in areas where a conventional Local Avoidance algorithm would fail.
 
 As urgency increases an agent automatically increases it's priority and reduces it's personal space radius. High priority forces other agents in the area to try harder to avoid collisions. A smaller personal space allows the agent to squeeze through narrow gaps which it could not previously fit through. When Urgency is very high (indicating that the agent has been failing to move for a long time) a proxy obstacle is created next to the agent in the direction it wants to travel. Other agents avoid the proxy obstacle which clears space for the agent to move into, this guarantees that an agent eventually makes progress.
 
-To add Urgency to an agent simply add an [Navigator](../../Reference/MonoBehaviours/Urgency.md) MonoBehaviour alongside the [Navigator](../../Reference/MonoBehaviours/Navigator.md) MonoBehaviour.
+To add Urgency to an agent simply add an [Navigator](../../Reference/MonoBehaviours/Urgency) MonoBehaviour alongside the [Navigator](../../Reference/MonoBehaviours/Navigator) MonoBehaviour.
