@@ -8,9 +8,19 @@ Local Avoidance is a system which automatically adjusts the output from [Context
 
 Local Avoidance is built into the core [Navigator](../../Reference/MonoBehaviours/Navigator) Monobehaviour. To use it simply [create an agent](../../HowTo/CreateAnAgent), open the [Navigator](../../Reference/MonoBehaviours/Navigator) inspector, turn on [`Block Other Agents`](../../Reference/MonoBehaviours/Navigator#block-other-agents) to make other agents avoid this agent and turn on [`Avoid Local Obstacles`](../../Reference/MonoBehaviours/Navigator#avoid-local-obstacles) to make this agent avoid nearby obstacles (including other agents).
 
+### Urgency
+
+There will always be situations where a Local Avoidance algorithm will fail to find a collision free direction for some agents to move in. This can sometimes a low priority agents stuck at the edges of a Crowd, failing to ever make any progress. Overcrowded includes an innovative solution to this problem: Urgency.
+
+Urgency increases when an agent is not making any progress and temporarily makes the agent more "selfish" - this allows it to push past the obstacle that was stopping it. This selfishness can help clear blockages in crowds and significantly improves the overall flow of agents through the scene even in areas where a conventional Local Avoidance algorithm would fail.
+
+To add Urgency to an agent simply add an [Urgency](../../Reference/MonoBehaviours/Urgency) MonoBehaviour alongside the [Navigator](../../Reference/MonoBehaviours/Navigator) MonoBehaviour.
+
 ### Configuring Local Avoidance
 
-With the default settings local avoidance will improve the movement of all agents around the scene. However, you may want to configure certain agents to move in different ways. For example all NPCs should avoid collisions with the player character even if it means colliding with other NPCs.
+With the default settings local avoidance will improve the movement of all agents around the scene. However, you may want to configure specific agents to move in a different way. For example all NPCs should avoid collisions with the player character even if it means colliding with other NPCs.
+
+All configuration is done by setting a range, not a specific value. The actual value used is randomly picked from the range. This means that if you spawn many agents from the same prefab they will all have slightly different configurations, this significantly improves the quality of movement of large groups of agents.
 
 ### Priority
 
@@ -27,18 +37,8 @@ This can be used to create more "important" agents which other agents will try n
 
 ## Personality
 
-todo
+There are two different ways to configure the remaining Local Avoidance parameters: personality configuration or advanced configuration.
 
-## Advanced Configuration
+When `Personality Auto Configuration` is enabled all of the Local Avoidance parameters are configured from just two parameters, "Carefulness" and "Extraversion". A very "careful" agent will try very hard to avoid collisions, even if it means frequently changing direction and moving erratically. A very "extraverted" agent will try very hard to push through other agents, even if it means extra collisions.
 
-todo
-
-### Urgency
-
-There will always be situations where a Local Avoidance algorithm will fail to find a collision free direction for some agents to move in. This can sometimes leave a few low priority agents stuck at the edges of a Crowd, failing to ever make any progress. Overcrowded includes an innovative solution to this problem: Urgency.
-
-Urgency increases when an agent is not making any progress and temporarily makes the agent more "selfish" - this allows it to push past the obstacle that was stopping it. This selfishness can help clear blockages in crowds and significantly improves the overall flow of agents through the scene even in areas where a conventional Local Avoidance algorithm would fail.
-
-As urgency increases an agent automatically increases it's priority and reduces it's personal space radius. High priority forces other agents in the area to try harder to avoid collisions. A smaller personal space allows the agent to squeeze through narrow gaps which it could not previously fit through. When Urgency is very high (indicating that the agent has been failing to move for a long time) a proxy obstacle is created next to the agent in the direction it wants to travel. Other agents avoid the proxy obstacle which clears space for the agent to move into, this guarantees that an agent eventually makes progress.
-
-To add Urgency to an agent simply add an [Urgency](../../Reference/MonoBehaviours/Urgency) MonoBehaviour alongside the [Navigator](../../Reference/MonoBehaviours/Navigator) MonoBehaviour.
+When `Personality Auto Configuration` is disabled all of the Local Avoidance parameters can be configured directly. See the [`Navigator`](../../Reference/MonoBehaviours/Navigator#personal-space-radius) documentation for further detail on these settings.
