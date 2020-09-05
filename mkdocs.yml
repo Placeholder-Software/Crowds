@@ -20,6 +20,7 @@ nav:
     - "Quick Start": "GettingStarted/QuickStart.md"
     - "Requirements": "GettingStarted/Requirements.md"
     - "What Are Steering Actions?": "GettingStarted/SteeringBehaviours.md"
+    - "What Are Steering Sensors?": "GettingStarted/SteeringSensors.md"
     - "What Is Local Avoidance?": "GettingStarted/LocalAvoidance.md"
 #    - "Formations": "GettingStarted/Formations.md"
     - "Demo Scenes":
