@@ -28,9 +28,23 @@ The units for the `Speed` property. `Direct` means that the `Speed` setting is a
 
 The speed to move away from the target at. The units of this value depend on the `Speed Type` property.
 
+### Off Mesh Links
+
 #### Autocomplete Off Mesh Links
 
 Set if this agent should automatically complete off-mesh links by teleporting to the end of the link as soon as `IsWaitingAtOffMeshLink` becomes `true`.
+
+When the game is running the inspector will show details of the next off-mesh link. When the agent is waiting at an off-mesh link the `Complete Off Mesh Link` button will appear, clicking this is equivalent to calling the [`CompleteOffMeshLink`](../SteerForGoal.md#completeoffmeshlinkbool-teleport-bool-checkoffpath) method.
+
+### Debug Gizmos
+
+### Waypoints
+
+Enable displaying the waypoints (exact points this agent intends to walk to) for this agent and set the colour. Waypoints are not calculated all the way to the end of the path for long paths.
+
+### Portals
+
+Enable displaying the portals (gateways which this agent intends to pass through) for this agent and set the colour. Portals represent the entire path from agent to goal.
 
 ## Scripting
 
