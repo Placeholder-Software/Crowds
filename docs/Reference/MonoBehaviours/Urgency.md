@@ -32,6 +32,10 @@ The rate at which the current agent Urgency will move towards the velocity urgen
 
 How much a difference in velocity affects Urgency. A small factor means that a very large difference in velocity is required for a change in Urgency.
 
+### Zone Urgency
+
+todo
+
 ### Debug Gizmos
 
 #### Aggression Proxy
