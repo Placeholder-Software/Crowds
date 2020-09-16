@@ -1,6 +1,6 @@
 # Negative Zone
 
-Increases the danger sensed in a certain direction for agents within the zone. Only affects agents with [todo:link appropriate property](todo) enabled.
+Increases the danger sensed in a certain direction for agents within the zone. Only affects agents with [Negative Zones](../../Navigator.md#negative-zones) enabled.
 
 Can be used to encourage the crowd to flow in certain directions in crowded areas. For example a negative zone can be be set up across a corridor - this discourages agents moving _across_ the corridor rather than _along_ it.
 

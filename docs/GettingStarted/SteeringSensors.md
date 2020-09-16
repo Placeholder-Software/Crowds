@@ -33,3 +33,5 @@ Overcrowded includes a library of easy to use sensors which can be adapted to a 
 ### How To
 
 todo: link some how-to guides on steering and sensors
+
+todo: add section on modes

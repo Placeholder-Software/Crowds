@@ -6,10 +6,6 @@ This MonoBehaviour is the main behaviour which configures a gameObject as an int
 
 ![Navigator Inspector](../../../images/NavigatorInspector.png)
 
-todo: ^ retake after area mask has been added
-todo: ^ retake after negative zone
- - todo: Add negative zone related properties to inspector section
-
 !!! note
     Some of the following properties set a range instead of a single value, when the agent is first initialised it will choose a random value in this range. This means that if you instantiate many prefabs of the same agent prefab they will all act slightly differently. This gives a more natural look to large groups of agents.
 
@@ -29,9 +25,9 @@ Agent type used for pathfinding. Available types are configured in the Unity nav
 
 The area mask which defines the walkable areas for this agent.
 
-### Pathfinding
+### Pathing
 
-#### Enable Pathing
+#### Enable Pathfinding
 
 Allow this entity to find a path to it's goal (if it has a goal).
 
@@ -51,11 +47,27 @@ If the agent is not on it's calculated path for this many seconds the path will 
 
 How far ahead of the agent should path points be calculated.
 
-#### Disable Automatic Repathing
-
-todo
-
 ### Steering
+
+#### Negative Mode
+
+Set how the signals from sensors are combined with the signals from steering actions to pick a final movement direction. See [here](../../GettingStarted/SteeringSensors.md) for more detail.
+
+#### Negative Threshold
+
+If `Negative Mode` is `Min` or `Max` set the threshold for negative signals to be considered equal. All directions with a negative signal closer to the min/max than the threshold will also be treated as if they are the min/max value.
+
+#### Positive Search Count
+
+Set how many directions will be tested to pick a final movement direction. Less directions makes all steering actions and sensors more efficient, but lowers the fidelity of movement.
+
+#### Negative Zones
+
+Set if this agent is affected by [Negative Zones](../Zones/NegativeZone.md).
+
+The `Belongs To`, `Collides With` and `Group Index` properties configure the [collision filter](https://docs.unity3d.com/Packages/com.unity.physics@latest/manual/collision_queries.html#filtering) to use for this agent when detecting negative zones.
+
+### Movement
 
 #### Ideal Speed
 
@@ -64,6 +76,18 @@ The speed which this agent prefers to move at.
 #### Maximum Speed
 
 The maximum speed which this agent can move at.
+
+#### Minimum Speed
+
+The minimum speed which this agent can move at.
+
+#### Maximum Angular Speed
+
+The maximum speed (degrees/second) which this agent can turn at.
+
+#### Maximum Acceleration
+
+The maximum acceleration (units/second/second) which this agent can change it's speed with.
 
 ### Local Avoidance (Blocking)
 
@@ -85,9 +109,7 @@ If two agents are walking directly towards each other priority determines how mu
 
 Allow [priority zones](../Zones/PriorityZone.md) to affect the priority of this agent.
 
-#### Belongs To/Collides With/Group Id
-
-Configure the [collision filter](https://docs.unity3d.com/Packages/com.unity.physics@latest/manual/collision_queries.html#filtering) to use for this agent when detecting priority zones.
+The `Belongs To`/`Collides With`/`Group Id` properties configure the [collision filter](https://docs.unity3d.com/Packages/com.unity.physics@latest/manual/collision_queries.html#filtering) to use for this agent when detecting priority zones.
 
 #### Personality Auto Configuration
 
