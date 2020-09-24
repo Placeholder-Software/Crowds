@@ -22,6 +22,7 @@ nav:
     - "What Are Steering Actions?": "GettingStarted/SteeringBehaviours.md"
     - "What Are Steering Sensors?": "GettingStarted/SteeringSensors.md"
     - "What Is Local Avoidance?": "GettingStarted/LocalAvoidance.md"
+    - "Jobified Pathfinding": "GettingStarted/PathfindingJobs.md"
 #    - "Formations": "GettingStarted/Formations.md"
     - "Demo Scenes":
         - "Contents": "GettingStarted/DemoScenes/Contents.md"
