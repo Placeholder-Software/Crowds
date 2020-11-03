@@ -14,7 +14,7 @@ todo: steering sensors (see SteeringBehaviours doc, move some of that over here)
 
 ### Danger Sensors
 
-[Steering actions](../SteeringBehaviours.md) indicate a direction that an agent _should_ to move in. Danger sensors do the opposite: they sense directions which the agent _should not_ move in. Danger sensors work in a similar way to steering actions, each sensor adds some weight to directions it considers risky, the final danger map is used to modify the steering context before picking a direction.
+[Steering actions](../SteeringBehaviours) indicate a direction that an agent _should_ to move in. Danger sensors do the opposite: they sense directions which the agent _should not_ move in. Danger sensors work in a similar way to steering actions, each sensor adds some weight to directions it considers risky, the final danger map is used to modify the steering context before picking a direction.
 
 ![A Danger](../../images/SteeringWithDanger.png)
 
