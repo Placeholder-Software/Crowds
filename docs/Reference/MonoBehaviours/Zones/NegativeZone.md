@@ -23,11 +23,12 @@ The gizmo indicates which directions danger is detected by a line terminated wit
 
 #### Negative Weight
 
-Set the negative weight that this zone creates in effected agents.
+Set the negative weight that this zone creates in agents which are facing towards the discouraged directions.
 
 ## Setup
 
 Physics zones require the `Unity.Physics` package to be installed. For a zone to work 3 other MonoBehaviours are required:
+
  - `Physics Shape`
  - `Physics Body`
  - `Convert To Entity`

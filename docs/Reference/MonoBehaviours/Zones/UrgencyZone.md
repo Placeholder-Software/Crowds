@@ -1,6 +1,6 @@
 # Urgency Zone
 
-Increases the [Urgency](../../Urgency.md) of agents within the physics volume. Urgency helps indvidual agents push through crowded areas.
+Increases the [Urgency](../../Urgency.md) of agents within the physics volume. Urgency helps individual agents push through crowded areas.
 
 ## Inspector
 
@@ -13,6 +13,7 @@ The amount of urgency to add to agents in the zone. Only affects agents with `Zo
 ## Setup
 
 Physics zones require the `Unity.Physics` package to be installed. For a zone to work 3 other MonoBehaviours are required:
+
  - `Physics Shape`
  - `Physics Body`
  - `Convert To Entity`

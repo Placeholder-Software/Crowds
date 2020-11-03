@@ -113,7 +113,7 @@ The `Belongs To`/`Collides With`/`Group Id` properties configure the [collision 
 
 #### Personality Auto Configuration
 
-If this is enabled the "personality" (i.e. configuration for local avoidance) of this agent can automatically be configured from two parameters - carefulness and extraversion. When this is disabled all of the personaility parameters can be set manually.
+If this is enabled the "personality" (i.e. configuration for local avoidance) of this agent can automatically be configured from two parameters - carefulness and extraversion. When this is disabled all of the personality parameters can be set manually.
 
 #### Carefulness (Range)
 
@@ -203,10 +203,10 @@ This method is equivalent to the Unity [`NavMesh.FindClosestEdge`](https://docs.
 
 Begins finding a path from the agent position to the `end` position, using the agent `AreaMask`, `AgentType` and `PathingAreaCost`. 
 
-The pathfinding runs asycnchronously and may take several frames to complete.
+The pathfinding runs asynchronously and may take several frames to complete.
 
 ### [PathfindingTask](/Reference/Other/PathfindingTask) FindPath(Vector3 start, Vector3 end, int areaMask, int agentType, NativeSlice<float>? areaCosts = default)
 
 Begins finding a path from the `start` point to the `end` point using a custom `areaMask`, `agentType` and `areaCosts`. `areaCosts` may be null in which case the default costs are used.
 
-The pathfinding runs asycnchronously and may take several frames to complete.
+The pathfinding runs asynchronously and may take several frames to complete.

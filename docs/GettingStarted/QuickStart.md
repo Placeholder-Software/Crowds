@@ -8,11 +8,11 @@
 
 ## Basic Concepts
 
-The **Getting Started** section of the docs explains the basic concepts of how Overcrowded works, what [Local Avoidance](../LocalAvoidance) is, how [Context Aware Steering Actions](../SteeringBehaviours) solve the pitfalls of traditional steering behaviours and how [Steering Sensors](../SteeringSensors) drive can inject gameplay into movement to create more intelligent behaviour.
+The **Getting Started** section of the docs explains the basic concepts of how Overcrowded works; what [Local Avoidance](../LocalAvoidance) is, how [Context Aware Steering Actions](../SteeringBehaviours) solve the pitfalls of traditional steering behaviours and how [Steering Sensors](../SteeringSensors) can inject gameplay into movement to create more intelligent behaviour.
 
 ## Demo Scenes
 
-Overcrowded includes a number of demo scenes which introduce the basic concepts of the system and demostrate how to create some common scenarios. Get started with these demos by running the `Start Here` scene in the `Assets/Plugins/PlaceholderSoftware/Crowds/Demos` folder. If you're having trouble making an agent behave as you want in your scene try cloning the most similar demo scene and tweaking that.
+Overcrowded includes a number of demo scenes which introduce the basic concepts of the system and demonstrate how to create some common scenarios. Get started with these demos by running the `Start Here` scene in the `Assets/Plugins/PlaceholderSoftware/Crowds/Demos` folder. If you're having trouble making an agent behave as you want in your scene try cloning the most similar demo scene and tweaking that.
 
 todo: check path ^
 
