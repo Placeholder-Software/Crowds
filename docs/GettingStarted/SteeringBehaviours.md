@@ -23,6 +23,8 @@ In the above example the steering action would output that they want to move lef
 
 ![Steering Context Graph](../../images/SteeringContextGraph.png)
 
+^ todo: put together a better graph or some other way of showing the context. At the very least label the axes!
+
 The final decision picks the best direction - in this case because it's a tie an arbitrary decision is made. This is much more realistic than taking the average direction; a person who wants to walk to two locations won't move towards the midpoint they will instead walk to one and then the other.
 
 The steering context is not just used for steering actions (deciding where to go) but can also be used for steering sensors (deciding where **not** to go). This can be used to inject gameplay considerations into the movement system, making it appear as if agents are aware of the scene and avoiding enemies/dangers. [Read more about Steering Sensors](../SteeringSensors).
