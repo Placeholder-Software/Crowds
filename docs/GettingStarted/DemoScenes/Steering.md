@@ -20,6 +20,6 @@ The **[BasicSteerForPursue](../../../Reference/MonoBehaviours/Steering/SteerForP
 
 The **[BasicSteerForTargetSpeed](../../../Reference/MonoBehaviours/Steering/SteerForTargetSpeed)** scene demonstrates speed steering which steers an agent at a given speed in no particular direction. The agent in this scene has "local avoidance" enabled to steer away from walls which block it's path.
 
-The **[BasicSteerForVelocity](../../../Reference/MonoBehaviours/Steering/SteerForVelocity)** scene demonstrates velocity steering which steers an agent in a specific direction. The agent in this scene is player controlled, the `Steer User Input` script copies the velocity into the `TargetVelocity Steering` behaviour.
+The **[BasicSteerForVelocity](../../../Reference/MonoBehaviours/Steering/SteerForTargetVelocity)** scene demonstrates velocity steering which steers an agent in a specific direction. The agent in this scene is player controlled, the `Steer User Input` script copies the velocity into the `TargetVelocity Steering` behaviour.
 
 The **[BasicSteerForWander](../../../Reference/MonoBehaviours/Steering/SteerForWander)** scene demonstrates wander steering which steers an agent randomly.

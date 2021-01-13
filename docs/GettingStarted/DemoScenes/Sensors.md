@@ -8,4 +8,4 @@ The **[BasicGameObjectSensor](../../../Reference/MonoBehaviours/Sensing/GameObje
 
 The **[BasicLineSensor](../../../Reference/MonoBehaviours/Sensing/LineSensor)** scene demonstrates an agent using arrival steering to move in a straight line towards a point. The line sensor causes the agent to avoid a line across the middle of the scene.
 
-The **[BasicPointSensor](../../../Reference/MonoBehaviours/Sensing/LineSensor)** scene demonstrates an agent using arrival steering to move in a straight line towards a point. The point sensor causes the agent to avoid a single point in the middle of the scene.
+The **[BasicPointSensor](../../../Reference/MonoBehaviours/Sensing/PointSensor)** scene demonstrates an agent using arrival steering to move in a straight line towards a point. The point sensor causes the agent to avoid a single point in the middle of the scene.
