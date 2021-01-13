@@ -5,7 +5,7 @@ Overcrowded **turbocharges** the NPCs in your game! Easily control **large group
 Overcrowded is built with the Unity Entity Component System (ECS) and the Job system which makes it **fast** and **scalable**. If your game isn't using these things that's not a problem - it's all accessed through **easy to use** MonoBehaviours and a comprehensive scripting API. You can get the **great performance** of ECS for your game without having to learn the complexity of how it works!
 
 ## Learn More
- - [Context Aware Steering Actions](GettingStarted/SteeringBehaviours.md)
+ - [Context Aware Steering Actions](GettingStarted/SteeringActions.md)
  - [Scene Sensing](GettingStarted/SteeringSensors.md)
  - [Realtime Local Avoidance](GettingStarted/LocalAvoidance.md)
  - [Jobified Pathfinding](GettingStarted/PathfindingJobs.md)

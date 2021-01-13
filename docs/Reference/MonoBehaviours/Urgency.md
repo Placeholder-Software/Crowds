@@ -22,7 +22,7 @@ Once the `Urgency` is over the `Proxy Create Threshold` the proxy obstacle will 
 
 #### Enable Velocity Urgency
 
-If this option is enabled Urgency will increase when the velocity the agent **wants** to move at (as determined by [`Steering Behaviours`](/GettingStarted/SteeringBehaviours)) is different to the velocity the agent is actually moving at (as determined by [`Local Avoidance`](/GettingStarted/LocalAvoidance)).
+If this option is enabled Urgency will increase when the velocity the agent **wants** to move at (as determined by [`Steering Behaviours`](/GettingStarted/SteeringActions)) is different to the velocity the agent is actually moving at (as determined by [`Local Avoidance`](/GettingStarted/LocalAvoidance)).
 
 #### Rate
 

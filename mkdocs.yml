@@ -19,14 +19,14 @@ nav:
 - "Getting Started":
     - "Quick Start": "GettingStarted/QuickStart.md"
     - "Requirements": "GettingStarted/Requirements.md"
-    - "What Are Steering Actions?": "GettingStarted/SteeringBehaviours.md"
+    - "What Are Steering Actions?": "GettingStarted/SteeringActions.md"
     - "What Are Steering Sensors?": "GettingStarted/SteeringSensors.md"
     - "What Is Local Avoidance?": "GettingStarted/LocalAvoidance.md"
     - "Jobified Pathfinding": "GettingStarted/PathfindingJobs.md"
-#    - "Formations": "GettingStarted/Formations.md"
     - "Demo Scenes":
         - "Contents": "GettingStarted/DemoScenes/Contents.md"
         - "1. Basic Steering Actions": "GettingStarted/DemoScenes/Steering.md"
+        - "2. Basic Steering Sensors": "GettingStarted/DemoScenes/Sensors.md"
         - "2. Local Avoidance": "GettingStarted/DemoScenes/LocalAvoidance.md"
 #       todo: more demo scenes
     - "Getting Help": "GettingStarted/Support.md"
@@ -36,10 +36,6 @@ nav:
     - "Follow A Path": "HowTo/FollowPath.md"
     - "Find A Path": "HowTo/FindPath.md"
     - "Traverse Off-Mesh Links": "HowTo/TraverseOffMesh.md"
-#    - "Build Formations":
-#        - "Roman Legion": "HowTo/Formations/Legion.md"
-#        - "Bodyguard/VIP": "HowTo/Formations/Bodyguard.md"
-#        - "Wolfpack": "HowTo/Formations/Wolfpack.md"
     - "Drive An Agent With Player Input": "HowTo/PlayerControl.md"
     - "Animate An Agent": "HowTo/AnimatedAgents.md"
     
@@ -48,45 +44,41 @@ nav:
     - "Pathfinding": "Advanced/Pathfinding.md"
 #    - "Using The ECS": "Advanced/UseECS.md"
 - "Reference":
-#    - "MonoBehaviours":
-        - "Entity Identity": "Reference/MonoBehaviours/EntityIdentity.md"
-        - "Navigator": "Reference/MonoBehaviours/Navigator.md"
-        - "Local Avoidance":
-            - "Urgency": "Reference/MonoBehaviours/Urgency.md"
-        - "Goal": "Reference/MonoBehaviours/Goal.md"
-        - "Synchroniser": "Reference/MonoBehaviours/Synchroniser.md"
-        - "Steering":
-            - "SteerForAlignment": "Reference/MonoBehaviours/Steering/SteerForAlignment.md"
-            - "SteerForArrival": "Reference/MonoBehaviours/Steering/SteerForArrival.md"
-            - "SteerForCohesion": "Reference/MonoBehaviours/Steering/SteerForCohesion.md"
-            - "SteerForEvade": "Reference/MonoBehaviours/Steering/SteerForEvade.md"
-            - "SteerForFlee": "Reference/MonoBehaviours/Steering/SteerForFlee.md"
-            - "SteerForGoal": "Reference/MonoBehaviours/Steering/SteerForGoal.md"
-            - "SteerForInterpose": "Reference/MonoBehaviours/Steering/SteerForInterpose.md"
-            - "SteerForPursue": "Reference/MonoBehaviours/Steering/SteerForPursue.md"
-            - "SteerForTargetSpeed": "Reference/MonoBehaviours/Steering/SteerForTargetSpeed.md"
-            - "SteerForTargetVelocity": "Reference/MonoBehaviours/Steering/SteerForTargetVelocity.md"
-            - "SteerForWander": "Reference/MonoBehaviours/Steering/SteerForWander.md"
-        - "Sensing":
-            - "CircleSensor": "Reference/MonoBehaviours/Sensing/CircleSensor.md"
-            - "GameObjectSensor": "Reference/MonoBehaviours/Sensing/GameObjectSensor.md"
-            - "LineSensor": "Reference/MonoBehaviours/Sensing/LineSensor.md"
-            - "PointSensor": "Reference/MonoBehaviours/Sensing/PointSensor.md"
-        - "Zones":
-            - "NegativeZone": "Reference/MonoBehaviours/Zones/NegativeZone.md"
-            - "PriorityZone": "Reference/MonoBehaviours/Zones/PriorityZone.md"
-            - "UrgencyZone": "Reference/MonoBehaviours/Zones/UrgencyZone.md"
-#        - "Formations":
-#            - "Assign To Formation": "Reference/MonoBehaviours/AssignToFormation.md"
-#            - "Rectangle Grid": "Reference/MonoBehaviours/RectangleGridFormation.md"
-        - "BaseComponentProxyBehaviour": "Reference/MonoBehaviours/BaseComponentProxyBehaviour.md"
-        - "Pathfinding":
-            - "PathfindingTask": "Reference/Other/PathfindingTask.md"
-            - "PathfindingResult": "Reference/Other/PathfindingResult.md"
-            - "PathfindingResultPolygon": "Reference/Other/PathfindingResultPolygon.md"
-            - "PathfindingResultPortal": "Reference/Other/PathfindingResultPortal.md"
-        - "NavMeshAgent Replacement":
-            - "EnhancedNavMeshAgent": "Reference/MonoBehaviours/EnhancedNavMeshAgent.md"
+    - "Entity Identity": "Reference/MonoBehaviours/EntityIdentity.md"
+    - "Navigator": "Reference/MonoBehaviours/Navigator.md"
+    - "Local Avoidance":
+        - "Urgency": "Reference/MonoBehaviours/Urgency.md"
+    - "Goal": "Reference/MonoBehaviours/Goal.md"
+    - "Synchroniser": "Reference/MonoBehaviours/Synchroniser.md"
+    - "Steering":
+        - "SteerForAlignment": "Reference/MonoBehaviours/Steering/SteerForAlignment.md"
+        - "SteerForArrival": "Reference/MonoBehaviours/Steering/SteerForArrival.md"
+        - "SteerForCohesion": "Reference/MonoBehaviours/Steering/SteerForCohesion.md"
+        - "SteerForEvade": "Reference/MonoBehaviours/Steering/SteerForEvade.md"
+        - "SteerForFlee": "Reference/MonoBehaviours/Steering/SteerForFlee.md"
+        - "SteerForGoal": "Reference/MonoBehaviours/Steering/SteerForGoal.md"
+        - "SteerForInterpose": "Reference/MonoBehaviours/Steering/SteerForInterpose.md"
+        - "SteerForPursue": "Reference/MonoBehaviours/Steering/SteerForPursue.md"
+        - "SteerForTargetSpeed": "Reference/MonoBehaviours/Steering/SteerForTargetSpeed.md"
+        - "SteerForTargetVelocity": "Reference/MonoBehaviours/Steering/SteerForTargetVelocity.md"
+        - "SteerForWander": "Reference/MonoBehaviours/Steering/SteerForWander.md"
+    - "Sensing":
+        - "CircleSensor": "Reference/MonoBehaviours/Sensing/CircleSensor.md"
+        - "GameObjectSensor": "Reference/MonoBehaviours/Sensing/GameObjectSensor.md"
+        - "LineSensor": "Reference/MonoBehaviours/Sensing/LineSensor.md"
+        - "PointSensor": "Reference/MonoBehaviours/Sensing/PointSensor.md"
+    - "Zones":
+        - "NegativeZone": "Reference/MonoBehaviours/Zones/NegativeZone.md"
+        - "PriorityZone": "Reference/MonoBehaviours/Zones/PriorityZone.md"
+        - "UrgencyZone": "Reference/MonoBehaviours/Zones/UrgencyZone.md"
+    - "BaseComponentProxyBehaviour": "Reference/MonoBehaviours/BaseComponentProxyBehaviour.md"
+    - "Pathfinding":
+        - "PathfindingTask": "Reference/Other/PathfindingTask.md"
+        - "PathfindingResult": "Reference/Other/PathfindingResult.md"
+        - "PathfindingResultPolygon": "Reference/Other/PathfindingResultPolygon.md"
+        - "PathfindingResultPortal": "Reference/Other/PathfindingResultPortal.md"
+    - "NavMeshAgent Replacement":
+        - "EnhancedNavMeshAgent": "Reference/MonoBehaviours/EnhancedNavMeshAgent.md"
 #    - "ECS Components":
 #        - "stuff"
 #    - "ECS Systems":
