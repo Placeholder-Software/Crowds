@@ -1,5 +1,3 @@
-# How To Create An Agent
-
 1. Create a new `GameObject` in the scene
 2. Add a [`Navigator`](../Reference/MonoBehaviours/Navigator.md) behaviour.
 3. Add a `Convert To Entity` behaviour and configure it like this:

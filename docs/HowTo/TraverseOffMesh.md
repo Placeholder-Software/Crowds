@@ -1,5 +1,3 @@
-## How To Traverse Off-Mesh Links
-
 [Off Mesh Links](https://docs.unity3d.com/Manual/class-OffMeshLink.html) are a feature of the Unity navmesh system, and off mesh link represents a connection that can be traversed but not by walking. For example, jumping over a gap or climbing up a ladder.
 
 The [SteerForGoal](/Reference/MonoBehaviours/Steering/SteerForGoal) behaviour controls the movement of an agent along a path, including off-mesh links.

@@ -8,8 +8,8 @@ Overcrowded is built with the Unity Entity Component System (ECS) and the Job sy
 
 ---
 
+# Learn More
 ## Concepts
-Understand the high level concepts of Overcrowded.
 
  - [Context Aware Steering Actions](GettingStarted/SteeringActions)
  - [Scene Sensing](GettingStarted/SteeringSensors)
@@ -17,15 +17,13 @@ Understand the high level concepts of Overcrowded.
  - [Jobified Pathfinding](GettingStarted/PathfindingJobs)
 
 ## Getting Started
-Get started using Overcrowded.
 
  - [Quick Start](GettingStarted/QuickStart)
  - [Dependencies](GettingStarted/Requirements)
  - [Demo Scenes](GettingStarted/DemoScenes/Contents)
- - [How To...](HowTo/Contents)
+ - [How To Create An Agent](HowTo/CreateAnAgent)
 
 ## Reference Docs
-Simple explanations for every part of Overcrowded.
 
  - [Navigator](Reference/MonoBehaviours/Navigator)
  - [Steer For Arrival](Reference/MonoBehaviours/Steering/SteerForArrival)

@@ -1,5 +1,3 @@
-## How To Find A Path
-
 !!! note
     To make an agent walk along a path, follow this [guide](../FollowPath) instead.
 

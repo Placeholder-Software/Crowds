@@ -1,5 +1,3 @@
-# How To Follow A Path
-
 !!! note
     To find a path without following it, follow this [guide](../FindPath) instead.
 

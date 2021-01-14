@@ -1,5 +1,3 @@
-## Animated Agents
-
 Overcrowded agents are very similar to Unity NavMeshAgents with respect to Animation - the navigation system outputs a velocity which should be followed and an animation script is responsible for starting an animation that will move the agent in this direction. Much of the advice in the Unity documentation on [Coupling Animation and Navigation](https://docs.unity3d.com/Manual/nav-CouplingAnimationAndNavigation.html) is relevant.
 
 ### Synchroniser
