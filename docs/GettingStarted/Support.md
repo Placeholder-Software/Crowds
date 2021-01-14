@@ -8,4 +8,4 @@ If there's something missing from Overcrowded which you'd like to see implemente
 
 ## Report An Issue
 
-If you encounter a bug with Overcrowded (_no matter how minor_) please report it on the [issue tracker](https://github.com/Placeholder-Software/Crowds/issues).
+If you encounter a bug with Overcrowded, **no matter how minor** please report it on the [issue tracker](https://github.com/Placeholder-Software/Crowds/issues).

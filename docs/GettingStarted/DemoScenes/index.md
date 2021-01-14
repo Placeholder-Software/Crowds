@@ -12,6 +12,6 @@ These scenes demonstrate the basic concepts of Overcrowded:
 
 ### Complex Demo Scenes
 
-These scenes are demonstrate how to use multiple parts of Overcrowded together to achieve high quality NPC movement:
+These scenes are more complete scenes which demonstrate how to combine multiple Overcrowded behaviours to achieve more complex movements:
 
 todo: complex multi-behaviour scenes (e.g. crossing)

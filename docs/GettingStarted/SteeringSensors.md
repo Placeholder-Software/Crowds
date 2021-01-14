@@ -1,5 +1,3 @@
-## Steering Sensors
-
 todo: steering sensors (see SteeringActions doc, move some of that over here)
 
 

@@ -7,7 +7,7 @@ theme:
     name: material
     include_sidebar: false
     palette:
-        scheme: preference
+        scheme: slate
         primary: orange
     features:
         - navigation.instant
@@ -40,12 +40,11 @@ nav:
     - "What Is Local Avoidance?": "GettingStarted/LocalAvoidance.md"
     - "Jobified Pathfinding": "GettingStarted/PathfindingJobs.md"
     - "Demo Scenes":
-        - "Contents": "GettingStarted/DemoScenes/Contents.md"
+        - "Index": "GettingStarted/DemoScenes/index.md"
         - "1. Steering Actions": "GettingStarted/DemoScenes/Steering.md"
         - "2. Steering Sensors": "GettingStarted/DemoScenes/Sensors.md"
         - "3. Steering Zones": "GettingStarted/DemoScenes/Zones.md"
         - "4. Local Avoidance": "GettingStarted/DemoScenes/LocalAvoidance.md"
-#       todo: more demo scenes
     - "Getting Help": "GettingStarted/Support.md"
 - "How To":
     - "Create A New Agent": "HowTo/CreateAnAgent.md"
@@ -59,7 +58,6 @@ nav:
 - "Advanced":
     - "Custom Steering Actions": "Advanced/CustomSteering.md"
     - "Pathfinding": "Advanced/Pathfinding.md"
-#    - "Using The ECS": "Advanced/UseECS.md"
 - "Reference":
     - "Entity Identity": "Reference/MonoBehaviours/EntityIdentity.md"
     - "Navigator": "Reference/MonoBehaviours/Navigator.md"
@@ -96,8 +94,4 @@ nav:
         - "PathfindingResultPortal": "Reference/Other/PathfindingResultPortal.md"
     - "NavMeshAgent Replacement":
         - "EnhancedNavMeshAgent": "Reference/MonoBehaviours/EnhancedNavMeshAgent.md"
-#    - "ECS Components":
-#        - "stuff"
-#    - "ECS Systems":
-#        - "stuff"
 
