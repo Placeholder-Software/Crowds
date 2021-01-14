@@ -6,6 +6,8 @@ copyright: "<a href='https://placeholder-software.co.uk/'>Placeholder Software</
 theme:
     name: mkdocs
     include_sidebar: false
+    palette:
+        scheme: slate
 markdown_extensions:
     - admonition
     - toc:
