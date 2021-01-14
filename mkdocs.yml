@@ -7,11 +7,21 @@ theme:
     name: material
     include_sidebar: false
     palette:
-        scheme: slate
-        primary: amber
+        scheme: preference
+        primary: orange
     features:
-        - navigation.tabs
-        - navigation.tabs.sticky
+        - navigation.instant
+        - toc.integrate
+    icon:
+        repo: fontawesome/brands/github
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/placeholdersoft
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/8dKpP5W
+    - icon: fontawesome/brands/github
+      link: https://github.com/Placeholder-Software/Crowds/
 markdown_extensions:
     - admonition
     - toc:
