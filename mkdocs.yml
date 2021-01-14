@@ -4,7 +4,7 @@ repo_name: "Issue Tracker"
 google_analytics: ["UA-46722926-6", "crowds.readthedocs.io"]
 copyright: "<a href='https://placeholder-software.co.uk/'>Placeholder Software</a>"
 theme:
-    name: mkdocs
+    name: material
     include_sidebar: false
 markdown_extensions:
     - admonition
@@ -14,6 +14,7 @@ markdown_extensions:
 extra_css:
     - css/admonition.css
     - css/title-indent.css
+    - css/colours.css
 nav:
 - "Home": "index.md"
 - "Getting Started":
