@@ -36,7 +36,7 @@ How much a difference in velocity affects Urgency. A small factor means that a v
 
 #### Enabled
 
-Allow this agent to be affected by [Urgency Zones](../Zones/UrgencyZone.md).
+Allow this agent to be affected by [Urgency Zones](../Zones/UrgencyZone).
 
 The `Belongs To`, `Collides With` and `Group Index` properties configure the [collision filter](https://docs.unity3d.com/Packages/com.unity.physics@latest/manual/collision_queries.html#filtering) to use for this agent when detecting urgency zones.
 

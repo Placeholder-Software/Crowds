@@ -1,6 +1,6 @@
 # GameObjectSensor
 
-This MonoBehaviour detects another GameObject as a danger and discourages steering towards it. This is similar to a [PointSensor](../PointSensor.md) where the point is always at the location of a particular GameObject.
+This MonoBehaviour detects another GameObject as a danger and discourages steering towards it. This is similar to a [PointSensor](../PointSensor) where the point is always at the location of a particular GameObject.
 
 ## Inspector
 

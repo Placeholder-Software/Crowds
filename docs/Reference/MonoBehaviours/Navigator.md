@@ -51,7 +51,7 @@ How far ahead of the agent should path points be calculated.
 
 #### Negative Mode
 
-Set how the signals from sensors are combined with the signals from steering actions to pick a final movement direction. See [here](../../GettingStarted/SteeringSensors.md) for more detail.
+Set how the signals from sensors are combined with the signals from steering actions to pick a final movement direction. See [here](../../GettingStarted/SteeringSensors) for more detail.
 
 #### Negative Threshold
 
@@ -63,7 +63,7 @@ Set how many directions will be tested to pick a final movement direction. Less 
 
 #### Negative Zones
 
-Set if this agent is affected by [Negative Zones](../Zones/NegativeZone.md).
+Set if this agent is affected by [Negative Zones](../Zones/NegativeZone).
 
 The `Belongs To`, `Collides With` and `Group Index` properties configure the [collision filter](https://docs.unity3d.com/Packages/com.unity.physics@latest/manual/collision_queries.html#filtering) to use for this agent when detecting negative zones.
 
@@ -107,7 +107,7 @@ If two agents are walking directly towards each other priority determines how mu
 
 #### Enable Priority Zones
 
-Allow [priority zones](../Zones/PriorityZone.md) to affect the priority of this agent.
+Allow [priority zones](../Zones/PriorityZone) to affect the priority of this agent.
 
 The `Belongs To`/`Collides With`/`Group Id` properties configure the [collision filter](https://docs.unity3d.com/Packages/com.unity.physics@latest/manual/collision_queries.html#filtering) to use for this agent when detecting priority zones.
 

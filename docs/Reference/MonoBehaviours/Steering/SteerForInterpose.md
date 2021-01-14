@@ -1,6 +1,6 @@
 # SteerForInterpose
 
-This MonoBehaviour causes an agent to [pursue](../SteerForPursue.md) a point between two other agents, ensuring it stays between them.
+This MonoBehaviour causes an agent to [pursue](../SteerForPursue) a point between two other agents, ensuring it stays between them.
 
 ## Inspector
 

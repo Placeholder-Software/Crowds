@@ -1,6 +1,6 @@
 # Urgency Zone
 
-Increases the [Urgency](../../Urgency.md) of agents within the physics volume. Urgency helps individual agents push through crowded areas.
+Increases the [Urgency](../../Urgency) of agents within the physics volume. Urgency helps individual agents push through crowded areas.
 
 ## Inspector
 
