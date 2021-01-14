@@ -6,11 +6,16 @@ copyright: "<a href='https://placeholder-software.co.uk/'>Placeholder Software</
 theme:
     name: material
     include_sidebar: false
+    palette:
+        scheme: slate
+        primary: amber
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
 markdown_extensions:
     - admonition
     - toc:
-        # The character on the right of `permalink` is a little chain icon. Doesn't render properly in vscode for some reason.
-        permalink: 
+        permalink: ⚓︎
 extra_css:
     - css/admonition.css
     - css/title-indent.css
