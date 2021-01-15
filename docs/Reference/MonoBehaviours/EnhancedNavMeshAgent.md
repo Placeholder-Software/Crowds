@@ -26,7 +26,7 @@ The `Enhanced Nav Mesh Agent` is not identical to the `Nav Mesh Agent`. The foll
 
 ## Inspector
 
-![Enhanced Nav Mesh Agent Inspector](../../../images/EnhancedNavMeshAgentInspector.png)
+![Enhanced Nav Mesh Agent Inspector](../../images/EnhancedNavMeshAgentInspector.png)
 
 #### Import From Nav mesh Agent
 

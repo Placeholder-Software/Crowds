@@ -4,7 +4,7 @@ This MonoBehaviour detects a circular area as a danger and discourages steering 
 
 ## Inspector
 
-![EntityIdentity Inspector](../../../../images/CircleSensorInspector.png)
+![EntityIdentity Inspector](../../../images/CircleSensorInspector.png)
 
 #### Name
 

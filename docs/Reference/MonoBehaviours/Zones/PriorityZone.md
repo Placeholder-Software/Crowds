@@ -4,7 +4,7 @@ Increases the priority of agents within a physics volume. Lower priority agents 
 
 ## Inspector
 
-![PriorityZone Inspector](../../../../images/PriorityZoneInspector.png)
+![PriorityZone Inspector](../../../images/PriorityZoneInspector.png)
 
 #### Priority
 
@@ -17,4 +17,4 @@ Physics zones require the `Unity.Physics` package to be installed. For a zone to
  - `Physics Body`
  - `Convert To Entity`
 
-![Physics Behaviours Inspector](../../../../images/PhysicsZoneBehavioursInspector.png)
+![Physics Behaviours Inspector](../../../images/PhysicsZoneBehavioursInspector.png)

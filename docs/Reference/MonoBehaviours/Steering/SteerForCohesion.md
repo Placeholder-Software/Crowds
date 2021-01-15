@@ -6,7 +6,7 @@ SteerForCohesion requires [Avoid Local Obstacles](../Navigator#avoid-local-obsta
 
 ## Inspector
 
-![EntityIdentity Inspector](../../../../images/SteerForCohesionInspector.png)
+![EntityIdentity Inspector](../../../images/SteerForCohesionInspector.png)
 
 #### Name
 

@@ -4,7 +4,7 @@ This MonoBehaviour detects a line as a danger and discourages steering towards i
 
 ## Inspector
 
-![EntityIdentity Inspector](../../../../images/LineSensorInspector.png)
+![EntityIdentity Inspector](../../../images/LineSensorInspector.png)
 
 #### Name
 

@@ -4,7 +4,7 @@ This MonoBehaviour causes an agent to steer in the average direction of all near
 
 ## Inspector
 
-![EntityIdentity Inspector](../../../../images/SteerForAlignmentInspector.png)
+![EntityIdentity Inspector](../../../images/SteerForAlignmentInspector.png)
 
 #### Name
 

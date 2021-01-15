@@ -4,7 +4,7 @@ This MonoBehaviour causes an agent to [pursue](../SteerForPursue) a point betwee
 
 ## Inspector
 
-![SteerForInterpose Inspector](../../../../images/SteerForInterposeInspector.png)
+![SteerForInterpose Inspector](../../../images/SteerForInterposeInspector.png)
 
 #### Name
 

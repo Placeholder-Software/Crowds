@@ -4,7 +4,7 @@ This MonoBehaviour detects another GameObject as a danger and discourages steeri
 
 ## Inspector
 
-![EntityIdentity Inspector](../../../../images/GameObjectSensorInspector.png)
+![EntityIdentity Inspector](../../../images/GameObjectSensorInspector.png)
 
 #### Name
 

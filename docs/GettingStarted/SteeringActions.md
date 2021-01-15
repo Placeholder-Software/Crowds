@@ -13,13 +13,13 @@ An agent will often have several of these actions which are blended together to 
 
 Basic steering actions as described above have been used in many games over the years. However they have a serious problem: if two steering actions point in opposite directions the agent will not move at all! This can result in agents appearing indecisive as several conflicting actions pull them in opposite direction. A real person would make a decision and go to one of the two locations.
 
-![Indecisive Agent](../../images/SteeringBehavioursNoMovement.png)
+![Indecisive Agent](../images/SteeringBehavioursNoMovement.png)
 
 Overcrowded solves this problem with "Context Aware Steering Actions". Each steering action outputs how much it wants to move in a direction and then a final decision is made by finding the most desirable direction to move in. This means that you can add any numbers of steering actions to influence the movement of an agent in many ways and the agent will still appear to be decisive.
 
 In the above example the steering actions would output that they want to move left and move right:
 
-![Steering Context Graph](../../images/SteeringContextGraph.png)
+![Steering Context Graph](../images/SteeringContextGraph.png)
 
 The final decision picks the best direction - in this case because it's a tie an arbitrary decision is made. This is much more realistic than taking the average direction; a person who wants to walk to two locations won't move towards the midpoint they will instead walk to one or the other.
 
@@ -29,7 +29,7 @@ The steering context is not just used for steering actions (deciding where to go
 
 In Overcrowded, each type of steering action is represented by a MonoBehaviour. In some cases you may want several of the same steering action attached to a single Agent (e.g. _Flee_ from 2 things simultaneously). However, Unity does not allow multiple copies of the same MonoBehaviour. To solve this problem the Overcrowded steering MonoBehaviours can each represent several copies of the same steering action:
 
-![Two Instances Of SteerForFlee](../../images/SteerForFleeTwoInstances.png)
+![Two Instances Of SteerForFlee](../images/SteerForFleeTwoInstances.png)
 
 This `SteerForFlee` inspector shows two flee actions named `FleeOne` and `FleeTwo` fleeing from two different points.
 

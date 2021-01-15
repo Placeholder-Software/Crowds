@@ -4,7 +4,7 @@ This Monobehaviour sychronises the Overcrowded simulation and the GameObjects in
 
 ## Inspector
 
-![EntityIdentity Inspector](../../../../images/SynchroniserInspector.png)
+![EntityIdentity Inspector](../../images/SynchroniserInspector.png)
 
 #### Preset
 

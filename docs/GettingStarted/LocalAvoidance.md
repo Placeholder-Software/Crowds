@@ -2,7 +2,7 @@
 
 Local Avoidance is a system which automatically adjusts the output from [Context Aware Steering Actions](../SteeringActions) to avoid collisions with other agents. This significantly improves the appearance of groups of agents moving in close proximity. Overcrowded includes a novel **Multi Sampled Local Avoidance** algorithm which rapidly chooses collision free movement directions for every agent in the scene simultaneously.
 
-![Local Avoidance Steering](../../images/SteeringLocalAvoidance.png)
+![Local Avoidance Steering](../images/SteeringLocalAvoidance.png)
 
 ### Using Local Avoidance
 
@@ -26,7 +26,7 @@ All configuration is done by setting a range, not a specific value. The actual v
 
 When two agents are walking towards a collision they must both adjust their movement direction to avoid the collision. Priority controls how much each agent is willing to adjust their direction.
 
-![Local Avoidance Steering](../../images/LocalAvoidanceYield.png)
+![Local Avoidance Steering](../images/LocalAvoidanceYield.png)
 
 If both of these agents have an _equal_ priority they will both adjust their direction the same amount (as shown above). If one agent has a slightly higher priority then it will adjust it's direction less than the agent with the lower priority. If one agent has a much higher priority (difference is greater than one) then it will not adjust it's direction at all, leaving the lower priority agent will adjust it's direction to avoid the collision.
 

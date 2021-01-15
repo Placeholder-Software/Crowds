@@ -4,7 +4,7 @@ This MonoBehaviour detects a single point as a danger and discourages steering t
 
 ## Inspector
 
-![EntityIdentity Inspector](../../../../images/PointSensorInspector.png)
+![EntityIdentity Inspector](../../../images/PointSensorInspector.png)
 
 #### Name
 

@@ -6,7 +6,7 @@ Can be used to encourage the crowd to flow in certain directions in crowded area
 
 ## Inspector
 
-![NegativeZone Inspector](../../../../images/NegativeZoneInspector.png)
+![NegativeZone Inspector](../../../images/NegativeZoneInspector.png)
 
 #### Angle Degrees
 
@@ -18,8 +18,8 @@ If enabled this zone detects danger in two opposite directions. If disable this 
 
 The gizmo indicates which directions danger is detected by a line terminated with a bar. Directions in which danger is not detected are indicated with an arrow:
 
-![Bidirectional Zone](../../../../images/NegativeZoneBidirectional.png)
-![Unidirectional Zone](../../../../images/NegativeZoneUnidirectional.png)
+![Bidirectional Zone](../../../images/NegativeZoneBidirectional.png)
+![Unidirectional Zone](../../../images/NegativeZoneUnidirectional.png)
 
 #### Negative Weight
 
@@ -33,4 +33,4 @@ Physics zones require the `Unity.Physics` package to be installed. For a zone to
  - `Physics Body`
  - `Convert To Entity`
 
-![Physics Behaviours Inspector](../../../../images/PhysicsZoneBehavioursInspector.png)
+![Physics Behaviours Inspector](../../../images/PhysicsZoneBehavioursInspector.png)

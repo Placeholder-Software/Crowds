@@ -23,9 +23,14 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Placeholder-Software/Crowds/
 markdown_extensions:
+    - attr_list
     - admonition
+    - pymdownx.superfences
     - toc:
         permalink: ⚓︎
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
 extra_css:
     - css/admonition.css
     - css/title-indent.css

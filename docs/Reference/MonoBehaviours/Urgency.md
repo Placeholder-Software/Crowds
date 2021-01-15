@@ -8,7 +8,7 @@ When Urgency is very high a proxy obstacle is created next to the agent in the d
 
 ## Inspector
 
-![Urgency Inspector](../../../images/UrgencyInspector.png)
+![Urgency Inspector](../../images/UrgencyInspector.png)
 
 #### Proxy Create Threshold
 
