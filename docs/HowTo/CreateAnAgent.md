@@ -4,6 +4,6 @@
 ![Convert To Entity Inspector](../images/ConvertToEntityInspector.png)
 
 4. Add a [`Synchroniser`](../Reference/MonoBehaviours/Synchroniser.md) behaviour and configure it like this:
-![Synchroniser Inspector](../images/SynchroniserInspector.png)
+![Synchroniser Inspector](../images/SynchroniserInspector.webp)
 
 5. Add [Steering Behaviours](../GettingStarted/SteeringActions.md) to make the agent move.
