@@ -39,7 +39,7 @@ private void Update()
 
 There is an example of a script which does this included in the package at `Assets/Plugins/PlaceholderSoftware/Crowds/Demos/Content/Characters/UnityChan/Scripts/UnityChanNavigationAgent.cs`. This script drives an agent ([Unity Chan](https://assetstore.unity.com/packages/3d/characters/unity-chan-model-18705?aid=1100lJDF)) set up with an [Animation Blend Tree](https://docs.unity3d.com/Manual/class-BlendTree.html):
 
-![Unity Chan Animation Controller](../images/AnimationControllerUnityChan.png)
+![Unity Chan Animation Controller](../images/AnimationControllerUnityChan.webp)
 
 The animation blend tree is set up with animations for run/walk/reverse while leaning left/center/right. There are two animation parameters which select blend of animations to play: `Direction` (Left/Right) and `Speed` (Forward/backward). The `UnityChanNavigationAgent` script uses:
 

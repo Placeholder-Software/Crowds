@@ -26,7 +26,7 @@ All configuration is done by setting a range, not a specific value. The actual v
 
 When two agents are walking towards a collision they must both adjust their movement direction to avoid the collision. Priority controls how much each agent is willing to adjust their direction.
 
-![Local Avoidance Steering](../images/LocalAvoidanceYield.png)
+![Local Avoidance Steering](../images/LocalAvoidanceYield.webp)
 
 If both of these agents have an _equal_ priority they will both adjust their direction the same amount (as shown above). If one agent has a slightly higher priority then it will adjust it's direction less than the agent with the lower priority. If one agent has a much higher priority (difference is greater than one) then it will not adjust it's direction at all, leaving the lower priority agent will adjust it's direction to avoid the collision.
 

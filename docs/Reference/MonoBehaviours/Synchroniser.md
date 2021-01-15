@@ -1,10 +1,10 @@
 # Synchroniser
 
-This Monobehaviour sychronises the Overcrowded simulation and the GameObjects in the scene.
+This MonoBehaviour sychronises the Overcrowded simulation and the GameObjects in the scene.
 
 ## Inspector
 
-![EntityIdentity Inspector](../../images/SynchroniserInspector.png)
+![EntityIdentity Inspector](../../images/SynchroniserInspector.webp)
 
 #### Preset
 
