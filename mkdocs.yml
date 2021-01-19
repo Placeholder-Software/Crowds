@@ -2,7 +2,9 @@ site_name: "Crowds"
 repo_url: "https://github.com/Placeholder-Software/Crowds"
 repo_name: "Issue Tracker"
 site_url: https://placeholder-software.github.io/Crowds
-google_analytics: ["UA-46722926-6", "crowds.readthedocs.io"]
+google_analytics:
+    - UA-46722926-6
+    - auto
 copyright: "<a href='https://placeholder-software.co.uk/'>Placeholder Software</a>"
 theme:
     name: material
@@ -16,13 +18,13 @@ theme:
     icon:
         repo: fontawesome/brands/github
 extra:
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/placeholdersoft
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/8dKpP5W
-    - icon: fontawesome/brands/github
-      link: https://github.com/Placeholder-Software/Crowds/
+    social:
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/placeholdersoft
+        - icon: fontawesome/brands/discord
+          link: https://discord.gg/8dKpP5W
+        - icon: fontawesome/brands/github
+          link: https://github.com/Placeholder-Software/Crowds/
 markdown_extensions:
     - attr_list
     - admonition
@@ -99,4 +101,6 @@ nav:
         - "PathfindingResultPortal": "Reference/Other/PathfindingResultPortal.md"
     - "NavMeshAgent Replacement":
         - "EnhancedNavMeshAgent": "Reference/MonoBehaviours/EnhancedNavMeshAgent.md"
+- "Release Notes":
+    - "0.0.0": "Changelog/0.0.0.md"
 

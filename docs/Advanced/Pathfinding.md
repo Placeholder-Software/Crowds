@@ -1,5 +1,3 @@
-# Pathfinding
-
 Overcrowded includes a pathfinding system based on the built in Unity pathfinding system. The Overcrowded pathfinder performs all pathfinding work in a Job (multithreaded) and rate limits the amount of work done in each pathfinding job per frame so that pathfinding can never negatively impact frame rates.
 
 In most cases you do **not** need to interact directly with the Overcrowded pathfinding system. If you want an agent to follow a path you should use the [`GoalPosition`](../HowTo/FollowPath.md) of the agent. If you just want to find a path between two locations you can simply use the Unity [pathfinding APIs](https://docs.unity3d.com/Manual/nav-Overview.html).
