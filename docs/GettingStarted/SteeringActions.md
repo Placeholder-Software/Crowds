@@ -35,5 +35,6 @@ This `SteerForFlee` inspector shows two flee actions named `FleeOne` and `FleeTw
 
 ### Continued Reading
 
-[Steering Sensors](../SteeringSensors) adjust the steering context to discourage agents from walking in certain directions - such as towards gameplay dangers.
-[Local Avoidance](../LocalAvoidance) adjusts the output of context aware steering actions to avoid collisions with obstacles in the scene - such as walls and other agents.
+ - [Steering Sensors](../SteeringSensors) adjust the steering context to discourage agents from walking in certain directions - such as towards gameplay dangers.
+ - [Local Avoidance](../LocalAvoidance) adjusts the output of context aware steering actions to avoid collisions with obstacles in the scene - such as walls and other agents.
+ - [How To: Move To A Point](../../HowTo/MoveToAPoint) A simple tutorial on how to use a single steering action.

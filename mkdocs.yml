@@ -30,9 +30,8 @@ markdown_extensions:
     - toc:
         permalink: ⚓︎
 extra_css:
-    - css/admonition.css
     - css/title-indent.css
-    - css/colours.css
+    - css/images.css
 nav:
 - "Home": "index.md"
 - "Getting Started":
@@ -57,6 +56,8 @@ nav:
     - "Traverse Off-Mesh Links": "HowTo/TraverseOffMesh.md"
     - "Drive An Agent With Player Input": "HowTo/PlayerControl.md"
     - "Animate An Agent": "HowTo/AnimatedAgents.md"
+    - "Avoid Danger": "HowTo/AvoidDanger.md"
+    - "Move To A Point": "HowTo/MoveToAPoint.md"
     
 - "Advanced":
     - "Custom Steering Actions": "Advanced/CustomSteering.md"
