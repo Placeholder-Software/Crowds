@@ -30,6 +30,7 @@ markdown_extensions:
     - pymdownx.highlight
     - toc:
         permalink: ⚓︎
+        toc_depth: 3
 extra_css:
     - css/title-indent.css
     - css/images.css
