@@ -8,44 +8,12 @@ The pathfinding system built into Overcrowded is based on the [Unity NavMesh](ht
 
 ### Using Overcrowded Navigator
 
-Every Overcrowded agent includes a [`Navigator`](../../Reference/MonoBehaviours/Navigator) MonoBehaviour. This MonoBehaviour includes the `FindPath` methods which start a pathfinding job and return a [`PathfindingTask`](../../Reference/Other/PathfindingResult/) object which represents the job. This object can be polled to check if the job has completed.
+Every Overcrowded agent includes a [`Navigator`](../../Reference/MonoBehaviours/Navigator) MonoBehaviour. This MonoBehaviour includes the `FindPath` methods which start a pathfinding job and returns a [`PathfindingTask`](../../Reference/Other/PathfindingTask/) object which represents the job. The job will run in the background over several frames, the `PathfindingTask` object can be polled to check if it is completed. Once the job is complete a [`PathfindingResult`](../../Reference/Other/PathfindingResult/) can be retrieved from the task object.
 
-```csharp
-PathfindingTask? _task;
+### Continued Reading
 
-void StartPathfinding()
-{
-    Navigator navigator = GetComponent<Navigator>();
-
-    // Start pathfinding to "destination"
-    _task = navigator.FindPath(destination);
-}
-
-void Update()
-{
-    // Don't do anything if the task doesn't exist or has been disposed
-    if (!_task.HasValue || _task.IsDisposed)
-        return;
-
-    // Check if the job has finished
-    // This will take a few frames for long paths.
-    if (!_task.IsComplete)
-        return;
-
-    // Extract the result of the pathfinding job.
-    // If this returns null it is because the task is not yet finished!
-    var result = _task.TryGetResult();
-    if (!result.HasValue)
-        return;
-
-    // Extract the polygons along the path
-    var polygons = result.TryGetPathPolygons();
-
-    // Do whatever you want to do with the completed path.
-    DoSomethingWithCompletedPath(polygons);
-
-    // Once you have finished working with the
-    // result you **must** dispose it.
-    result.Dispose();
-}
-```
+ - [How To: Find A Path](../../HowTo/FindPath) a simple tutorial on how to find a path from scripts.
+ - [How To: Follow A Path](../HowTo/FollowPath) a simple tutorial on how to follow a path to a point.
+ - [`Navigator`](../../Reference/MonoBehaviours/Navigator) reference documentation for the `Navigator` MonoBehaviour.
+ - [`PathfindingTask`](../../Reference/Other/PathfindingTask/) reference documentation for the `PathfindingTask`.
+ - [`PathfindingResult`](../../Reference/Other/PathfindingResult/) reference documentation for the `PathfindingResult`.
