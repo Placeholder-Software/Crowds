@@ -1,6 +1,7 @@
 site_name: "Crowds"
 repo_url: "https://github.com/Placeholder-Software/Crowds"
 repo_name: "Issue Tracker"
+site_url: https://placeholder-software.github.io/Crowds
 google_analytics: ["UA-46722926-6", "crowds.readthedocs.io"]
 copyright: "<a href='https://placeholder-software.co.uk/'>Placeholder Software</a>"
 theme:
