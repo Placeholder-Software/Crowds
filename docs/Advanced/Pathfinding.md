@@ -33,7 +33,7 @@ This will be scheduled in the pathfinding system and updated each frame. Each fr
 var completed = EntityManager.HasComponent<PathfindingComplete>(entity);
 ```
 
-Once the job is complete the `PathfindingComplete` component contains data about the completed job. The `Status` field indicates if the job was completed successsfully, partial, or was a failure.
+Once the job is complete the `PathfindingComplete` component contains data about the completed job. The `Status` field indicates if the job was completed successfully, partial, or was a failure.
 
 ```csharp
 var complete = EntityManager.GetComponentData<PathfindingComplete>(entity);

@@ -1,9 +1,7 @@
+This MonoBehaviour automatically maintains a connection between a GameObject in the scene and an ECS Entity which is used in the simulation.
+
 !!! warning
     This article mentions the Unity ECS. Although Overcrowded uses the ECS internally you don't need to understand anything about the ECS to use Overcrowded!
-
-# EntityIdentity
-
-This MonoBehaviour automatically maintains a connection between a GameObject in the scene and an ECS Entity which is used in the simulation.
 
 ## Inspector
 
@@ -31,4 +29,4 @@ Indicates if the Entity for this gameObject has been created yet.
 
 #### KeepAlive
 
-If set to false the Entity will be deleted when `OnDestroy` runs for this Monobehaviour.
+If set to false the Entity will be deleted when `OnDestroy` runs for this MonoBehaviour.

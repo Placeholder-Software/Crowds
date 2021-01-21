@@ -10,8 +10,14 @@ These scenes demonstrate the basic concepts of Overcrowded:
  - [Steering Sensors](../Sensors)
  - [Zones](../Zones)
 
+### Local Avoidance
+
+These scenes demonstrate basic usage of local avoidance:
+
+ - todo: local avoidance scenes
+
 ### Complex Demo Scenes
 
 These scenes are more complete scenes which demonstrate how to combine multiple Overcrowded behaviours to achieve more complex movements:
 
-todo: complex multi-behaviour scenes (e.g. crossing)
+ - todo: complex multi-behaviour scenes (e.g. crossing)
