@@ -51,11 +51,21 @@ How far ahead of the agent should path points be calculated.
 
 #### Negative Mode
 
-Set how the signals from sensors are combined with the signals from steering actions to pick a final movement direction. See [here](../../GettingStarted/SteeringSensors) for more detail.
+These options configure how the negative signal from steering sensors are interpreted when selecting a steering direction. See [here](../../GettingStarted/SteeringSensors) for more detail on steering sensors.
+
+ - **None** - negative signals will be completely ignored. This will prevent all steering sensors from affecting this agent.
+ - **Multiply** - inverse negative signal will be multiple with steering direction weight, reducing the weight of steering signals by the negative weight. This produces smoother steering and is the best option to use when there are many negative signals affecting an agent.
+ - **Mask Min** - only steering directions in the _minimum_ danger area are allowed, all other steering directions will not be chosen. This produces the most "cautious" steering but it is very likely that an agent using this mode will not be able to arrive at a specific destination if there is a danger sensed in that direction. Use this mode when an agent absolutely must not approach dangers and the actual direction it moves is not very important (e.g. wildlife).
+ - **Mask Max** - steering directions in the _maximum_ danger area are not allowed, all other steering directions are unaffected by danger sensors. This produces the least "cautious" steering, but it is very likely that the agent will be able to move to it's destination unless the danger is at the same location. Use this mode when there is just one very important danger influencing an agent.
 
 #### Negative Threshold
 
-If `Negative Mode` is `Min` or `Max` set the threshold for negative signals to be considered equal. All directions with a negative signal closer to the min/max than the threshold will also be treated as if they are the min/max value.
+Configures the threshold used for the negative mode.
+
+ - **None** - threshold does nothing.
+ - **Multiply** - threshold does nothing.
+ - **Mask Min** - all dangers signals within the threshold of the actual minimum are also treated as the minimum.
+ - **Mask Max** - all danger signals within the threshold of the actual maximum are also treated as the maximum.
 
 #### Positive Search Count
 

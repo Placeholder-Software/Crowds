@@ -1,4 +1,4 @@
-Local Avoidance is one of the most important parts of achieving natural agent movement. The local avoidance system slightly adjusts the output from [Context Aware Steering Actions](../SteeringActions) to avoid collisions with other agents. This significantly improves the appearance of groups of agents moving in close proximity. Overcrowded includes a novel **Multi Sampled Local Avoidance** algorithm which simultaneously chooses collision free movement directions for every agent in the scene.
+Local Avoidance is one of the most important parts of achieving natural agent movement. The local avoidance system slightly adjusts the output from [Context Aware Steering Actions](../SteeringActions) to avoid collisions with other agents. This significantly improves the appearance of groups of agents moving in close proximity. Overcrowded includes a novel **Time Sampled Local Avoidance** algorithm which simultaneously chooses collision free movement directions for every agent in the scene.
 
 ![Local Avoidance Steering](../images/SteeringLocalAvoidance.png)
 
