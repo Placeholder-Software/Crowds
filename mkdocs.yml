@@ -61,6 +61,7 @@ nav:
     - "Animate An Agent": "HowTo/AnimatedAgents.md"
     - "Avoid Danger": "HowTo/AvoidDanger.md"
     - "Move To A Point": "HowTo/MoveToAPoint.md"
+    - "Solve Bad Flow": "HowTo/SolveBadFlow.md"
     
 - "Advanced":
     - "Custom Steering Actions": "Advanced/CustomSteering.md"
