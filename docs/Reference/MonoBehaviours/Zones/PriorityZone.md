@@ -13,6 +13,7 @@ The amount of priority to add to agents in the zone. Only affects agents with [`
 ## Setup
 
 Physics zones require the `Unity.Physics` package to be installed. For a zone to work 3 other MonoBehaviours are required:
+
  - `Physics Shape`
  - `Physics Body`
  - `Convert To Entity`
