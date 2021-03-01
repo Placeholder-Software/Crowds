@@ -22,6 +22,9 @@ The XZ position of the end of the line.
 
 If checked, all directions _away_ from the line will be detected as a danger. If unchecked the directions _towards_ the line will be detected as a danger.
 
+#### Notch
+If checked the sensor will <b>not</b> detect danger directly towards the line when the agent is within the min negative distance. This gives the appearance of the agent making a decision to quickly dash across the danger at the last second. Not compatible with inverted sensors.
+
 #### Negative Weight
 
 The importance of this negative sensor relative to other sensors.
