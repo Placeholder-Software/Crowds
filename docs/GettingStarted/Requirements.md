@@ -2,12 +2,12 @@
 
 Overcrowded requires several packages installed from the Unity package manager:
 
- - [Burst (1.2.0)](https://docs.unity3d.com/Packages/com.unity.burst@latest/)
- - [Collections (0.1.1)](https://docs.unity3d.com/Packages/com.unity.collections@latest/)
- - [Entities (0.1.1)](https://docs.unity3d.com/Packages/com.unity.entities@latest/)
- - [Jobs (0.1.1)](https://docs.unity3d.com/Packages/com.unity.jobs@latest/)
- - [Mathematics (1.1.0)](https://docs.unity3d.com/Packages/com.unity.mathematics@latest/)
- - [Unity.Physics (0.0.2)](https://docs.unity3d.com/Packages/com.unity.physics@latest/)
+ - [Burst (1.3.9)](https://docs.unity3d.com/Packages/com.unity.burst@latest/)
+ - [Collections (0.9.0 - preview.6)](https://docs.unity3d.com/Packages/com.unity.collections@latest/)
+ - [Entities (0.11.2 - preview.1)](https://docs.unity3d.com/Packages/com.unity.entities@latest/)
+ - [Jobs (0.2.10 - preview.13)](https://docs.unity3d.com/Packages/com.unity.jobs@latest/)
+ - [Mathematics (1.2.1)](https://docs.unity3d.com/Packages/com.unity.mathematics@latest/)
+ - [Unity.Physics (0.4.1)](https://docs.unity3d.com/Packages/com.unity.physics@latest/)
 
 Overcrowded has been built and tested to work with the listed versions. As new versions of these packages are released we will update to support them as soon as possible. If you encounter a compatibility issue with any of these packages please report it on the [issue tracker](https://github.com/Placeholder-Software/Crowds/issues) and we'll fix it right away.
 
