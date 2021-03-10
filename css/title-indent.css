@@ -1,0 +1,32 @@
+.md-typeset h1 {
+    margin-bottom: 20px;
+}
+
+.md-typeset h2 {
+    margin-top: 20px;
+}
+
+h3 {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+h3 ~ p {
+    padding-left: 20px;
+}
+
+h4 {
+    padding-left: 20px;
+}
+
+h4 ~ p {
+    padding-left: 30px;
+}
+
+h5 {
+    padding-left: 30px;
+}
+
+h5 ~ p {
+    padding-left: 40px;
+}
